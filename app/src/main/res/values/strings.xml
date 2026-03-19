@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">112 SOS Hallássérülteknek</string>
+    <string name="sos_button_label">SOS</string>
+    <string name="login_title">Bejelentkezés</string>
+    <string name="register_title">Regisztráció</string>
+    <string name="emergency_call">112 Hívás</string>
+    <string name="send_location">Helyszín küldés</string>
+    <string name="send_message">Üzenet küldés</string>
+    <string name="profile">Profil</string>
+    <string name="settings">Beállítások</string>
+    <string name="gps_active">GPS aktív</string>
+    <string name="network_active">Hálózat</string>
+    <string name="sos_active">SOS aktív</string>
+    <string name="cancel">Mégse</string>
+    <string name="save">Mentés</string>
+    <string name="back">Vissza</string>
+    <string name="username">Felhasználónév</string>
+    <string name="password">Jelszó</string>
+    <string name="login_button">BEJELENTKEZÉS</string>
+    <string name="register_button">REGISZTRÁCIÓ</string>
+    <string name="no_account">Még nincs fiókja?</string>
+    <string name="has_account">Már van fiókja?</string>
+    <string name="sos_active_message">SOS AKTÍV – SEGÍTSÉG ÚTBAN</string>
+    <string name="press_emergency">Nyomja meg vészhelyzet esetén</string>
+</resources>
