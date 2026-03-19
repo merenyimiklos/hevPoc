@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/red_ambulance">
+    android:background="@drawable/bg_gradient_dark">
 
-    <!-- ═══ HEADER (red, ~22% of screen) ═══ -->
+    <!-- ═══ HEADER (~22% of screen) ═══ -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
             android:text="@string/terms_app_name"
-            android:textColor="@color/white"
+            android:textColor="@color/text_on_dark"
             android:textSize="16sp"
             android:textStyle="bold"
             android:gravity="center" />
@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
             android:text="@string/terms_powered_by"
-            android:textColor="#CCffffff"
+            android:textColor="@color/text_on_dark_secondary"
             android:textSize="11sp" />
 
     </LinearLayout>
@@ -60,7 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/home_subtitle"
-            android:textColor="#CCffffff"
+            android:textColor="@color/text_on_dark_secondary"
             android:textSize="11sp"
             android:textStyle="bold"
             android:letterSpacing="0.1" />
@@ -72,18 +72,18 @@
             android:src="@drawable/ic_more_vert"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="@string/home_menu"
-            android:tint="@color/white"
+            android:tint="@color/text_on_dark"
             android:padding="12dp" />
 
     </LinearLayout>
 
-    <!-- ═══ WHITE CARD (fills the rest, ~78% of screen) ═══ -->
+    <!-- ═══ DARK CARD (fills the rest, ~78% of screen) ═══ -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="7.8"
         android:orientation="vertical"
-        android:background="@drawable/bg_card_top_rounded"
+        android:background="@drawable/bg_card_dark_rounded"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
         android:paddingTop="16dp"
@@ -167,7 +167,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:layout_marginBottom="0dp"
-            android:background="@drawable/bg_witness_card"
+            android:background="@drawable/bg_surface_dark"
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:paddingStart="20dp"
@@ -192,7 +192,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/home_witness_label"
-                    android:textColor="@color/text_primary"
+                    android:textColor="@color/text_on_dark"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -218,3 +218,4 @@
     </LinearLayout>
 
 </LinearLayout>
+

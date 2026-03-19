@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/yellow_fire">
+    android:background="@drawable/bg_gradient_dark">
 
     <!-- ═══ HEADER ═══ -->
     <LinearLayout
@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/tuzolto_title"
-            android:textColor="@color/white"
+            android:textColor="@color/text_on_dark"
             android:textSize="22sp"
             android:textStyle="bold"
             android:letterSpacing="0.1" />
@@ -37,13 +37,13 @@
 
     </LinearLayout>
 
-    <!-- ═══ WHITE CARD ═══ -->
+    <!-- ═══ DARK CARD ═══ -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="8.2"
         android:orientation="vertical"
-        android:background="@drawable/bg_card_top_rounded"
+        android:background="@drawable/bg_card_dark_rounded"
         android:paddingStart="14dp"
         android:paddingEnd="14dp"
         android:paddingTop="14dp"
@@ -67,12 +67,12 @@
                 android:text="@string/mento01_one"
                 android:textSize="14sp"
                 android:textStyle="bold"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/btn_unselected_dark_text"
                 android:textAllCaps="true"
                 app:strokeColor="@color/yellow_fire"
                 app:strokeWidth="2dp"
                 app:cornerRadius="14dp"
-                app:backgroundTint="@color/white" />
+                app:backgroundTint="@color/btn_unselected_dark" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnCountMany"
@@ -84,12 +84,12 @@
                 android:text="@string/mento01_many"
                 android:textSize="14sp"
                 android:textStyle="bold"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/btn_unselected_dark_text"
                 android:textAllCaps="true"
                 app:strokeColor="@color/yellow_fire"
                 app:strokeWidth="2dp"
                 app:cornerRadius="14dp"
-                app:backgroundTint="@color/white" />
+                app:backgroundTint="@color/btn_unselected_dark" />
 
         </LinearLayout>
 
@@ -104,12 +104,12 @@
             android:text="@string/mento01_life_threat"
             android:textSize="15sp"
             android:textStyle="bold"
-            android:textColor="@color/text_primary"
+            android:textColor="@color/btn_unselected_dark_text"
             android:textAllCaps="true"
             app:strokeColor="@color/yellow_fire"
             app:strokeWidth="2dp"
             app:cornerRadius="14dp"
-            app:backgroundTint="@color/white" />
+            app:backgroundTint="@color/btn_unselected_dark" />
 
         <!-- GPS location status bar -->
         <TextView
@@ -118,7 +118,7 @@
             android:layout_height="0dp"
             android:layout_weight="0.8"
             android:layout_marginBottom="8dp"
-            android:background="@drawable/bg_witness_card"
+            android:background="@drawable/bg_surface_dark"
             android:padding="8dp"
             android:text="@string/location_waiting"
             android:textColor="@color/yellow_fire"
@@ -135,7 +135,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:hint="@string/mento01_extra_hint">
+            android:hint="@string/mento01_extra_hint"
+            app:boxStrokeColor="@color/text_on_dark_secondary"
+            app:hintTextColor="@color/text_on_dark_secondary">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etExtra"
@@ -143,7 +145,7 @@
                 android:layout_height="56dp"
                 android:inputType="textMultiLine"
                 android:textSize="15sp"
-                android:textColor="@color/text_primary" />
+                android:textColor="@color/text_on_dark" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -153,7 +155,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
             android:text="@string/mento01_preview_label"
-            android:textColor="@color/text_secondary"
+            android:textColor="@color/text_on_dark_secondary"
             android:textSize="14sp"
             android:textStyle="bold" />
 
@@ -163,10 +165,10 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2.5"
-            android:background="@drawable/bg_witness_card"
+            android:background="@drawable/bg_surface_dark"
             android:padding="10dp"
             android:text=""
-            android:textColor="@color/text_primary"
+            android:textColor="@color/text_on_dark"
             android:textSize="14sp"
             android:gravity="top" />
 

@@ -155,10 +155,10 @@ public class Rendor02Activity extends AppCompatActivity {
     private void setButtonSelected(MaterialButton btn, boolean selected) {
         int bgColor = selected
                 ? ContextCompat.getColor(this, R.color.blue_police)
-                : ContextCompat.getColor(this, R.color.white);
+                : ContextCompat.getColor(this, R.color.btn_unselected_dark);
         int textColor = selected
                 ? ContextCompat.getColor(this, R.color.white)
-                : ContextCompat.getColor(this, R.color.text_primary);
+                : ContextCompat.getColor(this, R.color.btn_unselected_dark_text);
         btn.setBackgroundTintList(ColorStateList.valueOf(bgColor));
         btn.setTextColor(textColor);
     }

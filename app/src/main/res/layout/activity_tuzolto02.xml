@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/yellow_fire">
+    android:background="@drawable/bg_gradient_dark">
 
     <!-- ═══ HEADER ═══ -->
     <LinearLayout
@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/tuzolto_title"
-            android:textColor="@color/white"
+            android:textColor="@color/text_on_dark"
             android:textSize="22sp"
             android:textStyle="bold"
             android:letterSpacing="0.1" />
@@ -37,13 +37,13 @@
 
     </LinearLayout>
 
-    <!-- ═══ WHITE CARD ═══ -->
+    <!-- ═══ DARK CARD ═══ -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="8.2"
         android:orientation="vertical"
-        android:background="@drawable/bg_card_top_rounded"
+        android:background="@drawable/bg_card_dark_rounded"
         android:paddingStart="14dp"
         android:paddingEnd="14dp"
         android:paddingTop="14dp"
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:text="@string/tuzolto02_cat_label"
-            android:textColor="@color/text_primary"
+            android:textColor="@color/text_on_dark"
             android:textSize="13sp"
             android:textStyle="bold"
             android:gravity="center" />
@@ -78,12 +78,12 @@
                 android:text="@string/tuzolto02_cat_accident"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/btn_unselected_dark_text"
                 android:textAllCaps="true"
                 app:strokeColor="@color/yellow_fire"
                 app:strokeWidth="2dp"
                 app:cornerRadius="14dp"
-                app:backgroundTint="@color/white" />
+                app:backgroundTint="@color/btn_unselected_dark" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnCatFireEvent"
@@ -95,12 +95,12 @@
                 android:text="@string/tuzolto02_cat_fire"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/btn_unselected_dark_text"
                 android:textAllCaps="true"
                 app:strokeColor="@color/yellow_fire"
                 app:strokeWidth="2dp"
                 app:cornerRadius="14dp"
-                app:backgroundTint="@color/white" />
+                app:backgroundTint="@color/btn_unselected_dark" />
 
         </LinearLayout>
 
@@ -122,12 +122,12 @@
                 android:text="@string/tuzolto02_cat_disaster"
                 android:textSize="14sp"
                 android:textStyle="bold"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/btn_unselected_dark_text"
                 android:textAllCaps="true"
                 app:strokeColor="@color/yellow_fire"
                 app:strokeWidth="2dp"
                 app:cornerRadius="14dp"
-                app:backgroundTint="@color/white" />
+                app:backgroundTint="@color/btn_unselected_dark" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnCatRescue"
@@ -139,12 +139,12 @@
                 android:text="@string/tuzolto02_cat_rescue"
                 android:textSize="14sp"
                 android:textStyle="bold"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/btn_unselected_dark_text"
                 android:textAllCaps="true"
                 app:strokeColor="@color/yellow_fire"
                 app:strokeWidth="2dp"
                 app:cornerRadius="14dp"
-                app:backgroundTint="@color/white" />
+                app:backgroundTint="@color/btn_unselected_dark" />
 
         </LinearLayout>
 

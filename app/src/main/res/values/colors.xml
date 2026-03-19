@@ -17,4 +17,12 @@
 
     <color name="green_action">#22C55E</color>
     <color name="gray_back">#9CA3AF</color>
+
+    <!-- Dark gradient theme colors -->
+    <color name="dark_surface">#1A1040</color>
+    <color name="dark_surface_2">#241856</color>
+    <color name="btn_unselected_dark">#2A1A5E</color>
+    <color name="btn_unselected_dark_text">#E8E0FF</color>
+    <color name="text_on_dark">#FFFFFF</color>
+    <color name="text_on_dark_secondary">#B0A8CC</color>
 </resources>

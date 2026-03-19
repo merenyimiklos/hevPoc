@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/blue_police">
+    android:background="@drawable/bg_gradient_dark">
 
     <!-- ═══ HEADER ═══ -->
     <LinearLayout
@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/rendor_title"
-            android:textColor="@color/white"
+            android:textColor="@color/text_on_dark"
             android:textSize="22sp"
             android:textStyle="bold"
             android:letterSpacing="0.1" />
@@ -37,13 +37,13 @@
 
     </LinearLayout>
 
-    <!-- ═══ WHITE CARD ═══ -->
+    <!-- ═══ DARK CARD ═══ -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="8.2"
         android:orientation="vertical"
-        android:background="@drawable/bg_card_top_rounded"
+        android:background="@drawable/bg_card_dark_rounded"
         android:paddingStart="14dp"
         android:paddingEnd="14dp"
         android:paddingTop="14dp"
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="6dp"
             android:text="@string/rendor02_cat_label"
-            android:textColor="@color/text_primary"
+            android:textColor="@color/text_on_dark"
             android:textSize="13sp"
             android:textStyle="bold"
             android:gravity="center" />
@@ -78,12 +78,12 @@
                 android:text="@string/rendor02_cat_kidnap"
                 android:textSize="12sp"
                 android:textStyle="bold"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/btn_unselected_dark_text"
                 android:textAllCaps="true"
                 app:strokeColor="@color/blue_police"
                 app:strokeWidth="2dp"
                 app:cornerRadius="14dp"
-                app:backgroundTint="@color/white" />
+                app:backgroundTint="@color/btn_unselected_dark" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnCatAttack"
@@ -95,12 +95,12 @@
                 android:text="@string/rendor02_cat_attack"
                 android:textSize="12sp"
                 android:textStyle="bold"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/btn_unselected_dark_text"
                 android:textAllCaps="true"
                 app:strokeColor="@color/blue_police"
                 app:strokeWidth="2dp"
                 app:cornerRadius="14dp"
-                app:backgroundTint="@color/white" />
+                app:backgroundTint="@color/btn_unselected_dark" />
 
         </LinearLayout>
 
@@ -122,12 +122,12 @@
                 android:text="@string/rendor02_cat_robbery"
                 android:textSize="12sp"
                 android:textStyle="bold"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/btn_unselected_dark_text"
                 android:textAllCaps="true"
                 app:strokeColor="@color/blue_police"
                 app:strokeWidth="2dp"
                 app:cornerRadius="14dp"
-                app:backgroundTint="@color/white" />
+                app:backgroundTint="@color/btn_unselected_dark" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnCatHarassment"
@@ -139,12 +139,12 @@
                 android:text="@string/rendor02_cat_harassment"
                 android:textSize="11sp"
                 android:textStyle="bold"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/btn_unselected_dark_text"
                 android:textAllCaps="true"
                 app:strokeColor="@color/blue_police"
                 app:strokeWidth="2dp"
                 app:cornerRadius="14dp"
-                app:backgroundTint="@color/white" />
+                app:backgroundTint="@color/btn_unselected_dark" />
 
         </LinearLayout>
 
@@ -166,12 +166,12 @@
                 android:text="@string/rendor02_cat_bank_robbery"
                 android:textSize="12sp"
                 android:textStyle="bold"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/btn_unselected_dark_text"
                 android:textAllCaps="true"
                 app:strokeColor="@color/blue_police"
                 app:strokeWidth="2dp"
                 app:cornerRadius="14dp"
-                app:backgroundTint="@color/white" />
+                app:backgroundTint="@color/btn_unselected_dark" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnCatArmed"
@@ -183,12 +183,12 @@
                 android:text="@string/rendor02_cat_armed"
                 android:textSize="12sp"
                 android:textStyle="bold"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/btn_unselected_dark_text"
                 android:textAllCaps="true"
                 app:strokeColor="@color/blue_police"
                 app:strokeWidth="2dp"
                 app:cornerRadius="14dp"
-                app:backgroundTint="@color/white" />
+                app:backgroundTint="@color/btn_unselected_dark" />
 
         </LinearLayout>
 
@@ -203,12 +203,12 @@
             android:text="@string/rendor02_cat_property"
             android:textSize="12sp"
             android:textStyle="bold"
-            android:textColor="@color/text_primary"
+            android:textColor="@color/btn_unselected_dark_text"
             android:textAllCaps="true"
             app:strokeColor="@color/blue_police"
             app:strokeWidth="2dp"
             app:cornerRadius="14dp"
-            app:backgroundTint="@color/white" />
+            app:backgroundTint="@color/btn_unselected_dark" />
 
         <!-- Vagyon sub-section (GONE until VAGYON ELLENI selected) -->
         <LinearLayout
@@ -237,12 +237,12 @@
                     android:text="@string/rendor02_cat_property_docs"
                     android:textSize="12sp"
                     android:textStyle="bold"
-                    android:textColor="@color/text_primary"
+                    android:textColor="@color/btn_unselected_dark_text"
                     android:textAllCaps="true"
                     app:strokeColor="@color/blue_police"
                     app:strokeWidth="2dp"
                     app:cornerRadius="14dp"
-                    app:backgroundTint="@color/white" />
+                    app:backgroundTint="@color/btn_unselected_dark" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnCatBurglary"
@@ -254,12 +254,12 @@
                     android:text="@string/rendor02_cat_property_burglary"
                     android:textSize="12sp"
                     android:textStyle="bold"
-                    android:textColor="@color/text_primary"
+                    android:textColor="@color/btn_unselected_dark_text"
                     android:textAllCaps="true"
                     app:strokeColor="@color/blue_police"
                     app:strokeWidth="2dp"
                     app:cornerRadius="14dp"
-                    app:backgroundTint="@color/white" />
+                    app:backgroundTint="@color/btn_unselected_dark" />
 
             </LinearLayout>
 
@@ -281,12 +281,12 @@
                     android:text="@string/rendor02_cat_property_vehicle"
                     android:textSize="12sp"
                     android:textStyle="bold"
-                    android:textColor="@color/text_primary"
+                    android:textColor="@color/btn_unselected_dark_text"
                     android:textAllCaps="true"
                     app:strokeColor="@color/blue_police"
                     app:strokeWidth="2dp"
                     app:cornerRadius="14dp"
-                    app:backgroundTint="@color/white" />
+                    app:backgroundTint="@color/btn_unselected_dark" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnCatCash"
@@ -298,12 +298,12 @@
                     android:text="@string/rendor02_cat_property_cash"
                     android:textSize="12sp"
                     android:textStyle="bold"
-                    android:textColor="@color/text_primary"
+                    android:textColor="@color/btn_unselected_dark_text"
                     android:textAllCaps="true"
                     app:strokeColor="@color/blue_police"
                     app:strokeWidth="2dp"
                     app:cornerRadius="14dp"
-                    app:backgroundTint="@color/white" />
+                    app:backgroundTint="@color/btn_unselected_dark" />
 
             </LinearLayout>
 
@@ -312,7 +312,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
-                android:hint="@string/rendor02_cat_other_hint">
+                android:hint="@string/rendor02_cat_other_hint"
+                app:boxStrokeColor="@color/text_on_dark_secondary"
+                app:hintTextColor="@color/text_on_dark_secondary">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etEgyeb"
@@ -320,7 +322,7 @@
                     android:layout_height="56dp"
                     android:inputType="text"
                     android:textSize="14sp"
-                    android:textColor="@color/text_primary" />
+                    android:textColor="@color/text_on_dark" />
 
             </com.google.android.material.textfield.TextInputLayout>
 

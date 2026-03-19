@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/red_ambulance">
+    android:background="@drawable/bg_gradient_dark">
 
     <!-- ═══ HEADER ═══ -->
     <LinearLayout
@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/home_ambulance"
-            android:textColor="@color/white"
+            android:textColor="@color/text_on_dark"
             android:textSize="22sp"
             android:textStyle="bold"
             android:letterSpacing="0.1" />
@@ -37,13 +37,13 @@
 
     </LinearLayout>
 
-    <!-- ═══ WHITE CARD ═══ -->
+    <!-- ═══ DARK CARD ═══ -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="8.2"
         android:orientation="vertical"
-        android:background="@drawable/bg_card_top_rounded"
+        android:background="@drawable/bg_card_dark_rounded"
         android:paddingStart="14dp"
         android:paddingEnd="14dp"
         android:paddingTop="14dp"
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="6dp"
             android:text="@string/mento02_age_label"
-            android:textColor="@color/text_primary"
+            android:textColor="@color/text_on_dark"
             android:textSize="13sp"
             android:textStyle="bold"
             android:gravity="center" />
@@ -78,12 +78,12 @@
                 android:text="@string/mento02_age_0_1"
                 android:textSize="14sp"
                 android:textStyle="bold"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/btn_unselected_dark_text"
                 android:textAllCaps="true"
                 app:strokeColor="@color/red_ambulance"
                 app:strokeWidth="2dp"
                 app:cornerRadius="14dp"
-                app:backgroundTint="@color/white" />
+                app:backgroundTint="@color/btn_unselected_dark" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnAge1"
@@ -96,12 +96,12 @@
                 android:text="@string/mento02_age_1_14"
                 android:textSize="14sp"
                 android:textStyle="bold"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/btn_unselected_dark_text"
                 android:textAllCaps="true"
                 app:strokeColor="@color/red_ambulance"
                 app:strokeWidth="2dp"
                 app:cornerRadius="14dp"
-                app:backgroundTint="@color/white" />
+                app:backgroundTint="@color/btn_unselected_dark" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnAge2"
@@ -113,12 +113,12 @@
                 android:text="@string/mento02_age_14plus"
                 android:textSize="14sp"
                 android:textStyle="bold"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/btn_unselected_dark_text"
                 android:textAllCaps="true"
                 app:strokeColor="@color/red_ambulance"
                 app:strokeWidth="2dp"
                 app:cornerRadius="14dp"
-                app:backgroundTint="@color/white" />
+                app:backgroundTint="@color/btn_unselected_dark" />
 
         </LinearLayout>
 
@@ -128,7 +128,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="6dp"
             android:text="@string/mento02_cat_label"
-            android:textColor="@color/text_primary"
+            android:textColor="@color/text_on_dark"
             android:textSize="13sp"
             android:textStyle="bold"
             android:gravity="center" />
@@ -151,12 +151,12 @@
                 android:text="@string/mento02_cat_home"
                 android:textSize="12sp"
                 android:textStyle="bold"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/btn_unselected_dark_text"
                 android:textAllCaps="true"
                 app:strokeColor="@color/red_ambulance"
                 app:strokeWidth="2dp"
                 app:cornerRadius="14dp"
-                app:backgroundTint="@color/white" />
+                app:backgroundTint="@color/btn_unselected_dark" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnCatRoad"
@@ -168,12 +168,12 @@
                 android:text="@string/mento02_cat_road"
                 android:textSize="12sp"
                 android:textStyle="bold"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/btn_unselected_dark_text"
                 android:textAllCaps="true"
                 app:strokeColor="@color/red_ambulance"
                 app:strokeWidth="2dp"
                 app:cornerRadius="14dp"
-                app:backgroundTint="@color/white" />
+                app:backgroundTint="@color/btn_unselected_dark" />
 
         </LinearLayout>
 
@@ -195,12 +195,12 @@
                 android:text="@string/mento02_cat_injury"
                 android:textSize="12sp"
                 android:textStyle="bold"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/btn_unselected_dark_text"
                 android:textAllCaps="true"
                 app:strokeColor="@color/red_ambulance"
                 app:strokeWidth="2dp"
                 app:cornerRadius="14dp"
-                app:backgroundTint="@color/white" />
+                app:backgroundTint="@color/btn_unselected_dark" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnCatIll"
@@ -212,12 +212,12 @@
                 android:text="@string/mento02_cat_ill"
                 android:textSize="12sp"
                 android:textStyle="bold"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/btn_unselected_dark_text"
                 android:textAllCaps="true"
                 app:strokeColor="@color/red_ambulance"
                 app:strokeWidth="2dp"
                 app:cornerRadius="14dp"
-                app:backgroundTint="@color/white" />
+                app:backgroundTint="@color/btn_unselected_dark" />
 
         </LinearLayout>
 
@@ -232,12 +232,12 @@
             android:text="@string/mento02_cat_trapped"
             android:textSize="12sp"
             android:textStyle="bold"
-            android:textColor="@color/text_primary"
+            android:textColor="@color/btn_unselected_dark_text"
             android:textAllCaps="true"
             app:strokeColor="@color/red_ambulance"
             app:strokeWidth="2dp"
             app:cornerRadius="14dp"
-            app:backgroundTint="@color/white" />
+            app:backgroundTint="@color/btn_unselected_dark" />
 
         <!-- Category row 4 – full-width ALLERGY -->
         <com.google.android.material.button.MaterialButton
@@ -250,12 +250,12 @@
             android:text="@string/mento02_cat_allergy"
             android:textSize="12sp"
             android:textStyle="bold"
-            android:textColor="@color/text_primary"
+            android:textColor="@color/btn_unselected_dark_text"
             android:textAllCaps="true"
             app:strokeColor="@color/red_ambulance"
             app:strokeWidth="2dp"
             app:cornerRadius="14dp"
-            app:backgroundTint="@color/white" />
+            app:backgroundTint="@color/btn_unselected_dark" />
 
         <!-- Category row 5 -->
         <LinearLayout
@@ -274,12 +274,12 @@
                 android:text="@string/mento02_cat_poison"
                 android:textSize="12sp"
                 android:textStyle="bold"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/btn_unselected_dark_text"
                 android:textAllCaps="true"
                 app:strokeColor="@color/red_ambulance"
                 app:strokeWidth="2dp"
                 app:cornerRadius="14dp"
-                app:backgroundTint="@color/white" />
+                app:backgroundTint="@color/btn_unselected_dark" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnCatChoke"
@@ -291,12 +291,12 @@
                 android:text="@string/mento02_cat_choke"
                 android:textSize="12sp"
                 android:textStyle="bold"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/btn_unselected_dark_text"
                 android:textAllCaps="true"
                 app:strokeColor="@color/red_ambulance"
                 app:strokeWidth="2dp"
                 app:cornerRadius="14dp"
-                app:backgroundTint="@color/white" />
+                app:backgroundTint="@color/btn_unselected_dark" />
 
         </LinearLayout>
 

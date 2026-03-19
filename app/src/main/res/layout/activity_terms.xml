@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/red_ambulance">
+    android:background="@drawable/bg_gradient_dark">
 
-    <!-- ═══ HEADER (red, ~25 % of screen) ═══ -->
+    <!-- ═══ HEADER (~25 % of screen) ═══ -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
             android:text="@string/terms_app_name"
-            android:textColor="@color/white"
+            android:textColor="@color/text_on_dark"
             android:textSize="17sp"
             android:textStyle="bold"
             android:gravity="center" />
@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
             android:text="@string/terms_powered_by"
-            android:textColor="#CCffffff"
+            android:textColor="@color/text_on_dark_secondary"
             android:textSize="11sp" />
 
         <View
@@ -54,7 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/terms_title"
-            android:textColor="@color/white"
+            android:textColor="@color/text_on_dark"
             android:textSize="13sp"
             android:textStyle="bold"
             android:gravity="center"
@@ -62,13 +62,13 @@
 
     </LinearLayout>
 
-    <!-- ═══ WHITE CARD (rounded top corners, fills rest) ═══ -->
+    <!-- ═══ DARK CARD (rounded top corners, fills rest) ═══ -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="7.5"
         android:orientation="vertical"
-        android:background="@drawable/bg_card_top_rounded"
+        android:background="@drawable/bg_card_dark_rounded"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
         android:paddingTop="20dp">
@@ -78,7 +78,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/terms_intro"
-            android:textColor="@color/text_secondary"
+            android:textColor="@color/text_on_dark_secondary"
             android:textSize="14sp"
             android:gravity="center"
             android:lineSpacingMultiplier="1.3" />
@@ -96,7 +96,7 @@
                 android:layout_height="62dp"
                 android:layout_weight="1"
                 android:layout_marginEnd="6dp"
-                android:background="@drawable/bg_link_btn"
+                android:background="@drawable/bg_link_btn_dark"
                 android:orientation="vertical"
                 android:gravity="center"
                 android:paddingStart="8dp"
@@ -118,7 +118,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
                     android:text="@string/terms_auf_tap"
-                    android:textColor="@color/text_secondary"
+                    android:textColor="@color/text_on_dark_secondary"
                     android:textSize="10sp"
                     android:gravity="center" />
 
@@ -130,7 +130,7 @@
                 android:layout_height="62dp"
                 android:layout_weight="1"
                 android:layout_marginStart="6dp"
-                android:background="@drawable/bg_link_btn"
+                android:background="@drawable/bg_link_btn_dark"
                 android:orientation="vertical"
                 android:gravity="center"
                 android:paddingStart="8dp"
@@ -152,7 +152,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
                     android:text="@string/terms_privacy_tap"
-                    android:textColor="@color/text_secondary"
+                    android:textColor="@color/text_on_dark_secondary"
                     android:textSize="10sp"
                     android:gravity="center" />
 
@@ -172,7 +172,7 @@
             android:layout_width="match_parent"
             android:layout_height="68dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/bg_check_row"
+            android:background="@drawable/bg_check_row_dark"
             android:clickable="true"
             android:focusable="true"
             android:gravity="center_vertical"
@@ -196,7 +196,7 @@
                 android:paddingStart="14dp"
                 android:paddingEnd="0dp"
                 android:text="@string/terms_accept_auf"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/text_on_dark"
                 android:textSize="14sp"
                 android:lineSpacingMultiplier="1.2" />
 
@@ -208,7 +208,7 @@
             android:layout_width="match_parent"
             android:layout_height="68dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/bg_check_row"
+            android:background="@drawable/bg_check_row_dark"
             android:clickable="true"
             android:focusable="true"
             android:gravity="center_vertical"
@@ -232,7 +232,7 @@
                 android:paddingStart="14dp"
                 android:paddingEnd="0dp"
                 android:text="@string/terms_accept_privacy"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/text_on_dark"
                 android:textSize="14sp"
                 android:lineSpacingMultiplier="1.2" />
 
@@ -244,7 +244,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
             android:text="@string/terms_disclaimer"
-            android:textColor="@color/text_secondary"
+            android:textColor="@color/text_on_dark_secondary"
             android:textSize="11sp"
             android:gravity="center" />
 

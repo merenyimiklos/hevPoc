@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/red_ambulance">
+    android:background="@drawable/bg_gradient_dark">
 
-    <!-- ═══ HEADER (red, ~25 % of screen) ═══ -->
+    <!-- ═══ HEADER (~25 % of screen) ═══ -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
             android:text="@string/terms_app_name"
-            android:textColor="@color/white"
+            android:textColor="@color/text_on_dark"
             android:textSize="17sp"
             android:textStyle="bold"
             android:gravity="center" />
@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
             android:text="@string/terms_powered_by"
-            android:textColor="#CCffffff"
+            android:textColor="@color/text_on_dark_secondary"
             android:textSize="11sp" />
 
         <View
@@ -54,7 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/personal_data_title"
-            android:textColor="@color/white"
+            android:textColor="@color/text_on_dark"
             android:textSize="13sp"
             android:textStyle="bold"
             android:gravity="center"
@@ -62,13 +62,13 @@
 
     </LinearLayout>
 
-    <!-- ═══ WHITE CARD (rounded top corners, fills rest) ═══ -->
+    <!-- ═══ DARK CARD (rounded top corners, fills rest) ═══ -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="7.5"
         android:orientation="vertical"
-        android:background="@drawable/bg_card_top_rounded"
+        android:background="@drawable/bg_card_dark_rounded"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
         android:paddingTop="20dp"
@@ -80,7 +80,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:text="@string/personal_data_required"
-            android:textColor="@color/text_primary"
+            android:textColor="@color/text_on_dark"
             android:textSize="14sp"
             android:textStyle="bold" />
 
@@ -91,7 +91,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:hint="@string/personal_data_name">
+            android:hint="@string/personal_data_name"
+            app:boxStrokeColor="@color/text_on_dark_secondary"
+            app:hintTextColor="@color/text_on_dark_secondary">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etName"
@@ -99,7 +101,7 @@
                 android:layout_height="56dp"
                 android:inputType="textPersonName"
                 android:textSize="16sp"
-                android:textColor="@color/text_input" />
+                android:textColor="@color/text_on_dark" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -113,7 +115,9 @@
             android:hint="@string/personal_data_dob"
             app:endIconMode="custom"
             app:endIconDrawable="@drawable/ic_calendar"
-            app:endIconContentDescription="@string/personal_data_dob">
+            app:endIconContentDescription="@string/personal_data_dob"
+            app:boxStrokeColor="@color/text_on_dark_secondary"
+            app:hintTextColor="@color/text_on_dark_secondary">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etDob"
@@ -123,7 +127,7 @@
                 android:clickable="true"
                 android:inputType="none"
                 android:textSize="16sp"
-                android:textColor="@color/text_input"
+                android:textColor="@color/text_on_dark"
                 android:cursorVisible="false" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -135,7 +139,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:hint="@string/personal_data_address">
+            android:hint="@string/personal_data_address"
+            app:boxStrokeColor="@color/text_on_dark_secondary"
+            app:hintTextColor="@color/text_on_dark_secondary">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etAddress"
@@ -143,7 +149,7 @@
                 android:layout_height="56dp"
                 android:inputType="textPostalAddress"
                 android:textSize="16sp"
-                android:textColor="@color/text_input" />
+                android:textColor="@color/text_on_dark" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -153,7 +159,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:text="@string/personal_data_hearing"
-            android:textColor="@color/text_primary"
+            android:textColor="@color/text_on_dark"
             android:textSize="14sp"
             android:textStyle="bold" />
 
@@ -173,8 +179,8 @@
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:textAllCaps="false"
-                android:textColor="@color/text_primary"
-                app:backgroundTint="@color/border_default"
+                android:textColor="@color/btn_unselected_dark_text"
+                app:backgroundTint="@color/btn_unselected_dark"
                 app:cornerRadius="14dp"
                 app:elevation="0dp" />
 
@@ -188,8 +194,8 @@
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:textAllCaps="false"
-                android:textColor="@color/text_primary"
-                app:backgroundTint="@color/border_default"
+                android:textColor="@color/btn_unselected_dark_text"
+                app:backgroundTint="@color/btn_unselected_dark"
                 app:cornerRadius="14dp"
                 app:elevation="0dp" />
 
