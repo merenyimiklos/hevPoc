@@ -65,13 +65,13 @@
                 android:layout_weight="1"
                 android:layout_marginEnd="6dp"
                 android:text="@string/mento01_one"
-                android:textSize="14sp"
+                android:textSize="15sp"
                 android:textStyle="bold"
                 android:textColor="@color/text_primary"
                 android:textAllCaps="true"
                 app:strokeColor="@color/red_ambulance"
                 app:strokeWidth="2dp"
-                app:cornerRadius="14dp"
+                app:cornerRadius="@dimen/corner_button"
                 app:backgroundTint="@color/white" />
 
             <com.google.android.material.button.MaterialButton
@@ -82,13 +82,13 @@
                 android:layout_weight="1"
                 android:layout_marginStart="6dp"
                 android:text="@string/mento01_many"
-                android:textSize="14sp"
+                android:textSize="15sp"
                 android:textStyle="bold"
                 android:textColor="@color/text_primary"
                 android:textAllCaps="true"
                 app:strokeColor="@color/red_ambulance"
                 app:strokeWidth="2dp"
-                app:cornerRadius="14dp"
+                app:cornerRadius="@dimen/corner_button"
                 app:backgroundTint="@color/white" />
 
         </LinearLayout>
@@ -102,13 +102,13 @@
             android:layout_weight="1"
             android:layout_marginBottom="8dp"
             android:text="@string/mento01_life_threat"
-            android:textSize="15sp"
+            android:textSize="16sp"
             android:textStyle="bold"
             android:textColor="@color/text_primary"
             android:textAllCaps="true"
             app:strokeColor="@color/red_ambulance"
             app:strokeWidth="2dp"
-            app:cornerRadius="14dp"
+            app:cornerRadius="@dimen/corner_button"
             app:backgroundTint="@color/white" />
 
         <!-- GPS location status bar -->
@@ -118,11 +118,11 @@
             android:layout_height="0dp"
             android:layout_weight="0.8"
             android:layout_marginBottom="8dp"
-            android:background="@drawable/bg_witness_card"
-            android:padding="8dp"
+            android:background="@drawable/bg_location_bar"
+            android:padding="10dp"
             android:text="@string/location_waiting"
-            android:textColor="@color/red_ambulance"
-            android:textSize="14sp"
+            android:textColor="@color/blue_police"
+            android:textSize="13sp"
             android:textStyle="bold"
             android:gravity="center_vertical"
             android:singleLine="false"
@@ -193,8 +193,8 @@
                 app:iconSize="24dp"
                 app:iconTint="@color/white"
                 app:backgroundTint="@color/btn_back"
-                app:cornerRadius="14dp"
-                app:elevation="0dp"
+                app:cornerRadius="@dimen/corner_button"
+                app:elevation="2dp"
                 android:contentDescription="@string/btn_back" />
 
             <com.google.android.material.button.MaterialButton
@@ -208,8 +208,8 @@
                 android:textStyle="bold"
                 android:textAllCaps="true"
                 app:backgroundTint="@color/gray_back"
-                app:cornerRadius="14dp"
-                app:elevation="0dp" />
+                app:cornerRadius="@dimen/corner_button"
+                app:elevation="2dp" />
 
         </LinearLayout>
 

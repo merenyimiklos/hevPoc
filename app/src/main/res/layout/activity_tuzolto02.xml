@@ -56,7 +56,7 @@
             android:layout_marginBottom="10dp"
             android:text="@string/tuzolto02_cat_label"
             android:textColor="@color/text_primary"
-            android:textSize="13sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             android:gravity="center" />
 
@@ -82,7 +82,7 @@
                 android:textAllCaps="true"
                 app:strokeColor="@color/yellow_fire"
                 app:strokeWidth="2dp"
-                app:cornerRadius="14dp"
+                app:cornerRadius="@dimen/corner_button"
                 app:backgroundTint="@color/white" />
 
             <com.google.android.material.button.MaterialButton
@@ -99,7 +99,7 @@
                 android:textAllCaps="true"
                 app:strokeColor="@color/yellow_fire"
                 app:strokeWidth="2dp"
-                app:cornerRadius="14dp"
+                app:cornerRadius="@dimen/corner_button"
                 app:backgroundTint="@color/white" />
 
         </LinearLayout>
@@ -126,7 +126,7 @@
                 android:textAllCaps="true"
                 app:strokeColor="@color/yellow_fire"
                 app:strokeWidth="2dp"
-                app:cornerRadius="14dp"
+                app:cornerRadius="@dimen/corner_button"
                 app:backgroundTint="@color/white" />
 
             <com.google.android.material.button.MaterialButton
@@ -143,7 +143,7 @@
                 android:textAllCaps="true"
                 app:strokeColor="@color/yellow_fire"
                 app:strokeWidth="2dp"
-                app:cornerRadius="14dp"
+                app:cornerRadius="@dimen/corner_button"
                 app:backgroundTint="@color/white" />
 
         </LinearLayout>
@@ -171,8 +171,8 @@
                 app:iconSize="24dp"
                 app:iconTint="@color/white"
                 app:backgroundTint="@color/btn_back"
-                app:cornerRadius="14dp"
-                app:elevation="0dp"
+                app:cornerRadius="@dimen/corner_button"
+                app:elevation="2dp"
                 android:contentDescription="@string/btn_back" />
 
             <com.google.android.material.button.MaterialButton
@@ -186,8 +186,8 @@
                 android:textStyle="bold"
                 android:textAllCaps="true"
                 app:backgroundTint="@color/gray_back"
-                app:cornerRadius="14dp"
-                app:elevation="0dp" />
+                app:cornerRadius="@dimen/corner_button"
+                app:elevation="2dp" />
 
         </LinearLayout>
 

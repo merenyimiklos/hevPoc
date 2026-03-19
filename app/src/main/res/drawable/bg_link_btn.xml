@@ -2,8 +2,8 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_pressed="true">
         <shape>
-            <solid android:color="#F3F4F6" />
-            <corners android:radius="12dp" />
+            <solid android:color="#F1F5F9" />
+            <corners android:radius="@dimen/corner_button" />
             <stroke
                 android:width="1.5dp"
                 android:color="@color/border_default" />
@@ -12,9 +12,9 @@
     <item>
         <shape>
             <solid android:color="@color/surface_card" />
-            <corners android:radius="12dp" />
+            <corners android:radius="@dimen/corner_button" />
             <stroke
-                android:width="1dp"
+                android:width="1.5dp"
                 android:color="@color/border_default" />
         </shape>
     </item>
