@@ -56,7 +56,7 @@
             android:layout_marginBottom="6dp"
             android:text="@string/rendor02_cat_label"
             android:textColor="@color/text_primary"
-            android:textSize="13sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             android:gravity="center" />
 
@@ -76,13 +76,13 @@
                 android:layout_weight="1"
                 android:layout_marginEnd="5dp"
                 android:text="@string/rendor02_cat_kidnap"
-                android:textSize="12sp"
+                android:textSize="13sp"
                 android:textStyle="bold"
                 android:textColor="@color/text_primary"
                 android:textAllCaps="true"
                 app:strokeColor="@color/blue_police"
                 app:strokeWidth="2dp"
-                app:cornerRadius="14dp"
+                app:cornerRadius="@dimen/corner_button"
                 app:backgroundTint="@color/white" />
 
             <com.google.android.material.button.MaterialButton
@@ -93,13 +93,13 @@
                 android:layout_weight="1"
                 android:layout_marginStart="5dp"
                 android:text="@string/rendor02_cat_attack"
-                android:textSize="12sp"
+                android:textSize="13sp"
                 android:textStyle="bold"
                 android:textColor="@color/text_primary"
                 android:textAllCaps="true"
                 app:strokeColor="@color/blue_police"
                 app:strokeWidth="2dp"
-                app:cornerRadius="14dp"
+                app:cornerRadius="@dimen/corner_button"
                 app:backgroundTint="@color/white" />
 
         </LinearLayout>
@@ -120,13 +120,13 @@
                 android:layout_weight="1"
                 android:layout_marginEnd="5dp"
                 android:text="@string/rendor02_cat_robbery"
-                android:textSize="12sp"
+                android:textSize="13sp"
                 android:textStyle="bold"
                 android:textColor="@color/text_primary"
                 android:textAllCaps="true"
                 app:strokeColor="@color/blue_police"
                 app:strokeWidth="2dp"
-                app:cornerRadius="14dp"
+                app:cornerRadius="@dimen/corner_button"
                 app:backgroundTint="@color/white" />
 
             <com.google.android.material.button.MaterialButton
@@ -137,13 +137,13 @@
                 android:layout_weight="1"
                 android:layout_marginStart="5dp"
                 android:text="@string/rendor02_cat_harassment"
-                android:textSize="11sp"
+                android:textSize="13sp"
                 android:textStyle="bold"
                 android:textColor="@color/text_primary"
                 android:textAllCaps="true"
                 app:strokeColor="@color/blue_police"
                 app:strokeWidth="2dp"
-                app:cornerRadius="14dp"
+                app:cornerRadius="@dimen/corner_button"
                 app:backgroundTint="@color/white" />
 
         </LinearLayout>
@@ -164,13 +164,13 @@
                 android:layout_weight="1"
                 android:layout_marginEnd="5dp"
                 android:text="@string/rendor02_cat_bank_robbery"
-                android:textSize="12sp"
+                android:textSize="13sp"
                 android:textStyle="bold"
                 android:textColor="@color/text_primary"
                 android:textAllCaps="true"
                 app:strokeColor="@color/blue_police"
                 app:strokeWidth="2dp"
-                app:cornerRadius="14dp"
+                app:cornerRadius="@dimen/corner_button"
                 app:backgroundTint="@color/white" />
 
             <com.google.android.material.button.MaterialButton
@@ -181,13 +181,13 @@
                 android:layout_weight="1"
                 android:layout_marginStart="5dp"
                 android:text="@string/rendor02_cat_armed"
-                android:textSize="12sp"
+                android:textSize="13sp"
                 android:textStyle="bold"
                 android:textColor="@color/text_primary"
                 android:textAllCaps="true"
                 app:strokeColor="@color/blue_police"
                 app:strokeWidth="2dp"
-                app:cornerRadius="14dp"
+                app:cornerRadius="@dimen/corner_button"
                 app:backgroundTint="@color/white" />
 
         </LinearLayout>
@@ -201,13 +201,13 @@
             android:layout_weight="1"
             android:layout_marginBottom="5dp"
             android:text="@string/rendor02_cat_property"
-            android:textSize="12sp"
+            android:textSize="13sp"
             android:textStyle="bold"
             android:textColor="@color/text_primary"
             android:textAllCaps="true"
             app:strokeColor="@color/blue_police"
             app:strokeWidth="2dp"
-            app:cornerRadius="14dp"
+            app:cornerRadius="@dimen/corner_button"
             app:backgroundTint="@color/white" />
 
         <!-- Vagyon sub-section (GONE until VAGYON ELLENI selected) -->
@@ -235,13 +235,13 @@
                     android:layout_weight="1"
                     android:layout_marginEnd="5dp"
                     android:text="@string/rendor02_cat_property_docs"
-                    android:textSize="12sp"
+                    android:textSize="13sp"
                     android:textStyle="bold"
                     android:textColor="@color/text_primary"
                     android:textAllCaps="true"
                     app:strokeColor="@color/blue_police"
                     app:strokeWidth="2dp"
-                    app:cornerRadius="14dp"
+                    app:cornerRadius="@dimen/corner_button"
                     app:backgroundTint="@color/white" />
 
                 <com.google.android.material.button.MaterialButton
@@ -252,13 +252,13 @@
                     android:layout_weight="1"
                     android:layout_marginStart="5dp"
                     android:text="@string/rendor02_cat_property_burglary"
-                    android:textSize="12sp"
+                    android:textSize="13sp"
                     android:textStyle="bold"
                     android:textColor="@color/text_primary"
                     android:textAllCaps="true"
                     app:strokeColor="@color/blue_police"
                     app:strokeWidth="2dp"
-                    app:cornerRadius="14dp"
+                    app:cornerRadius="@dimen/corner_button"
                     app:backgroundTint="@color/white" />
 
             </LinearLayout>
@@ -279,13 +279,13 @@
                     android:layout_weight="1"
                     android:layout_marginEnd="5dp"
                     android:text="@string/rendor02_cat_property_vehicle"
-                    android:textSize="12sp"
+                    android:textSize="13sp"
                     android:textStyle="bold"
                     android:textColor="@color/text_primary"
                     android:textAllCaps="true"
                     app:strokeColor="@color/blue_police"
                     app:strokeWidth="2dp"
-                    app:cornerRadius="14dp"
+                    app:cornerRadius="@dimen/corner_button"
                     app:backgroundTint="@color/white" />
 
                 <com.google.android.material.button.MaterialButton
@@ -296,13 +296,13 @@
                     android:layout_weight="1"
                     android:layout_marginStart="5dp"
                     android:text="@string/rendor02_cat_property_cash"
-                    android:textSize="12sp"
+                    android:textSize="13sp"
                     android:textStyle="bold"
                     android:textColor="@color/text_primary"
                     android:textAllCaps="true"
                     app:strokeColor="@color/blue_police"
                     app:strokeWidth="2dp"
-                    app:cornerRadius="14dp"
+                    app:cornerRadius="@dimen/corner_button"
                     app:backgroundTint="@color/white" />
 
             </LinearLayout>
@@ -349,8 +349,8 @@
                 app:iconSize="24dp"
                 app:iconTint="@color/white"
                 app:backgroundTint="@color/btn_back"
-                app:cornerRadius="14dp"
-                app:elevation="0dp"
+                app:cornerRadius="@dimen/corner_button"
+                app:elevation="2dp"
                 android:contentDescription="@string/btn_back" />
 
             <com.google.android.material.button.MaterialButton
@@ -364,8 +364,8 @@
                 android:textStyle="bold"
                 android:textAllCaps="true"
                 app:backgroundTint="@color/gray_back"
-                app:cornerRadius="14dp"
-                app:elevation="0dp" />
+                app:cornerRadius="@dimen/corner_button"
+                app:elevation="2dp" />
 
         </LinearLayout>
 

@@ -41,7 +41,7 @@
             android:layout_marginTop="2dp"
             android:text="@string/terms_powered_by"
             android:textColor="#CCffffff"
-            android:textSize="11sp" />
+            android:textSize="12sp" />
 
     </LinearLayout>
 
@@ -62,7 +62,7 @@
             android:text="@string/home_subtitle"
             android:textAlignment="center"
             android:textColor="#CCffffff"
-            android:textSize="11sp"
+            android:textSize="12sp"
             android:textStyle="bold"
             android:letterSpacing="0.1" />
 
@@ -111,8 +111,8 @@
             app:iconTint="@color/white"
             app:iconPadding="0dp"
             app:backgroundTint="@color/red_ambulance"
-            app:cornerRadius="18dp"
-            app:elevation="0dp" />
+            app:cornerRadius="@dimen/corner_button"
+            app:elevation="4dp" />
 
         <!-- TŰZOLTÓ – fire department -->
         <com.google.android.material.button.MaterialButton
@@ -135,8 +135,8 @@
             app:iconTint="@color/white"
             app:iconPadding="0dp"
             app:backgroundTint="@color/yellow_fire"
-            app:cornerRadius="18dp"
-            app:elevation="0dp" />
+            app:cornerRadius="@dimen/corner_button"
+            app:elevation="4dp" />
 
         <!-- RENDŐR – police -->
         <com.google.android.material.button.MaterialButton
@@ -159,8 +159,8 @@
             app:iconTint="@color/white"
             app:iconPadding="0dp"
             app:backgroundTint="@color/blue_police"
-            app:cornerRadius="18dp"
-            app:elevation="0dp" />
+            app:cornerRadius="@dimen/corner_button"
+            app:elevation="4dp" />
 
         <!-- SZEMTANÚ – witness toggle card (icon + label + MaterialSwitch) -->
         <LinearLayout
@@ -203,7 +203,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/home_witness_on"
                     android:textColor="@color/green_action"
-                    android:textSize="13sp" />
+                    android:textSize="14sp" />
 
             </LinearLayout>
 

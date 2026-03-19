@@ -2,20 +2,26 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="bg_app">#F4F4F5</color>
+    <color name="bg_app">#F1F5F9</color>
     <color name="surface_card">#FFFFFF</color>
-    <color name="text_primary">#111827</color>
-    <color name="text_secondary">#6B7280</color>
-    <color name="text_input">#1F2937</color>
-    <color name="hint_text">#374151</color>
-    <color name="border_default">#D1D5DB</color>
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#475569</color>
+    <color name="text_input">#1E293B</color>
+    <color name="hint_text">#334155</color>
+    <color name="border_default">#CBD5E1</color>
 
-    <color name="red_ambulance">#D32F2F</color>
-    <color name="yellow_fire">#F59E0B</color>
-    <color name="blue_police">#0284C7</color>
-    <color name="gray_witness">#4B5563</color>
+    <!-- Service accent colors — all pass WCAG AA with white text -->
+    <color name="red_ambulance">#C62828</color>
+    <color name="yellow_fire">#E65100</color>
+    <color name="blue_police">#0277BD</color>
+    <color name="gray_witness">#334155</color>
 
-    <color name="green_action">#22C55E</color>
-    <color name="gray_back">#9CA3AF</color>
-    <color name="btn_back">#475569</color>
+    <!-- Action / state colors -->
+    <color name="green_action">#15803D</color>
+    <color name="gray_back">#64748B</color>
+    <color name="btn_back">#334155</color>
+
+    <!-- Location bar tint — semi-transparent service color on white surface -->
+    <color name="location_bar_bg">#F0F9FF</color>
+    <color name="location_bar_border">#BAE6FD</color>
 </resources>

@@ -56,7 +56,7 @@
             android:layout_marginBottom="6dp"
             android:text="@string/mento02_age_label"
             android:textColor="@color/text_primary"
-            android:textSize="13sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             android:gravity="center" />
 
@@ -76,13 +76,13 @@
                 android:layout_weight="1"
                 android:layout_marginEnd="5dp"
                 android:text="@string/mento02_age_0_1"
-                android:textSize="14sp"
+                android:textSize="15sp"
                 android:textStyle="bold"
                 android:textColor="@color/text_primary"
                 android:textAllCaps="true"
                 app:strokeColor="@color/red_ambulance"
                 app:strokeWidth="2dp"
-                app:cornerRadius="14dp"
+                app:cornerRadius="@dimen/corner_button"
                 app:backgroundTint="@color/white" />
 
             <com.google.android.material.button.MaterialButton
@@ -94,13 +94,13 @@
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
                 android:text="@string/mento02_age_1_14"
-                android:textSize="14sp"
+                android:textSize="15sp"
                 android:textStyle="bold"
                 android:textColor="@color/text_primary"
                 android:textAllCaps="true"
                 app:strokeColor="@color/red_ambulance"
                 app:strokeWidth="2dp"
-                app:cornerRadius="14dp"
+                app:cornerRadius="@dimen/corner_button"
                 app:backgroundTint="@color/white" />
 
             <com.google.android.material.button.MaterialButton
@@ -111,13 +111,13 @@
                 android:layout_weight="1"
                 android:layout_marginStart="5dp"
                 android:text="@string/mento02_age_14plus"
-                android:textSize="14sp"
+                android:textSize="15sp"
                 android:textStyle="bold"
                 android:textColor="@color/text_primary"
                 android:textAllCaps="true"
                 app:strokeColor="@color/red_ambulance"
                 app:strokeWidth="2dp"
-                app:cornerRadius="14dp"
+                app:cornerRadius="@dimen/corner_button"
                 app:backgroundTint="@color/white" />
 
         </LinearLayout>
@@ -129,7 +129,7 @@
             android:layout_marginBottom="6dp"
             android:text="@string/mento02_cat_label"
             android:textColor="@color/text_primary"
-            android:textSize="13sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             android:gravity="center" />
 
@@ -149,13 +149,13 @@
                 android:layout_weight="1"
                 android:layout_marginEnd="5dp"
                 android:text="@string/mento02_cat_home"
-                android:textSize="12sp"
+                android:textSize="13sp"
                 android:textStyle="bold"
                 android:textColor="@color/text_primary"
                 android:textAllCaps="true"
                 app:strokeColor="@color/red_ambulance"
                 app:strokeWidth="2dp"
-                app:cornerRadius="14dp"
+                app:cornerRadius="@dimen/corner_button"
                 app:backgroundTint="@color/white" />
 
             <com.google.android.material.button.MaterialButton
@@ -166,13 +166,13 @@
                 android:layout_weight="1"
                 android:layout_marginStart="5dp"
                 android:text="@string/mento02_cat_road"
-                android:textSize="12sp"
+                android:textSize="13sp"
                 android:textStyle="bold"
                 android:textColor="@color/text_primary"
                 android:textAllCaps="true"
                 app:strokeColor="@color/red_ambulance"
                 app:strokeWidth="2dp"
-                app:cornerRadius="14dp"
+                app:cornerRadius="@dimen/corner_button"
                 app:backgroundTint="@color/white" />
 
         </LinearLayout>
@@ -193,13 +193,13 @@
                 android:layout_weight="1"
                 android:layout_marginEnd="5dp"
                 android:text="@string/mento02_cat_injury"
-                android:textSize="12sp"
+                android:textSize="13sp"
                 android:textStyle="bold"
                 android:textColor="@color/text_primary"
                 android:textAllCaps="true"
                 app:strokeColor="@color/red_ambulance"
                 app:strokeWidth="2dp"
-                app:cornerRadius="14dp"
+                app:cornerRadius="@dimen/corner_button"
                 app:backgroundTint="@color/white" />
 
             <com.google.android.material.button.MaterialButton
@@ -210,13 +210,13 @@
                 android:layout_weight="1"
                 android:layout_marginStart="5dp"
                 android:text="@string/mento02_cat_ill"
-                android:textSize="12sp"
+                android:textSize="13sp"
                 android:textStyle="bold"
                 android:textColor="@color/text_primary"
                 android:textAllCaps="true"
                 app:strokeColor="@color/red_ambulance"
                 app:strokeWidth="2dp"
-                app:cornerRadius="14dp"
+                app:cornerRadius="@dimen/corner_button"
                 app:backgroundTint="@color/white" />
 
         </LinearLayout>
@@ -230,13 +230,13 @@
             android:layout_weight="1"
             android:layout_marginBottom="5dp"
             android:text="@string/mento02_cat_trapped"
-            android:textSize="12sp"
+            android:textSize="13sp"
             android:textStyle="bold"
             android:textColor="@color/text_primary"
             android:textAllCaps="true"
             app:strokeColor="@color/red_ambulance"
             app:strokeWidth="2dp"
-            app:cornerRadius="14dp"
+            app:cornerRadius="@dimen/corner_button"
             app:backgroundTint="@color/white" />
 
         <!-- Category row 4 – full-width ALLERGY -->
@@ -248,13 +248,13 @@
             android:layout_weight="1"
             android:layout_marginBottom="5dp"
             android:text="@string/mento02_cat_allergy"
-            android:textSize="12sp"
+            android:textSize="13sp"
             android:textStyle="bold"
             android:textColor="@color/text_primary"
             android:textAllCaps="true"
             app:strokeColor="@color/red_ambulance"
             app:strokeWidth="2dp"
-            app:cornerRadius="14dp"
+            app:cornerRadius="@dimen/corner_button"
             app:backgroundTint="@color/white" />
 
         <!-- Category row 5 -->
@@ -272,13 +272,13 @@
                 android:layout_weight="1"
                 android:layout_marginEnd="5dp"
                 android:text="@string/mento02_cat_poison"
-                android:textSize="12sp"
+                android:textSize="13sp"
                 android:textStyle="bold"
                 android:textColor="@color/text_primary"
                 android:textAllCaps="true"
                 app:strokeColor="@color/red_ambulance"
                 app:strokeWidth="2dp"
-                app:cornerRadius="14dp"
+                app:cornerRadius="@dimen/corner_button"
                 app:backgroundTint="@color/white" />
 
             <com.google.android.material.button.MaterialButton
@@ -289,13 +289,13 @@
                 android:layout_weight="1"
                 android:layout_marginStart="5dp"
                 android:text="@string/mento02_cat_choke"
-                android:textSize="12sp"
+                android:textSize="13sp"
                 android:textStyle="bold"
                 android:textColor="@color/text_primary"
                 android:textAllCaps="true"
                 app:strokeColor="@color/red_ambulance"
                 app:strokeWidth="2dp"
-                app:cornerRadius="14dp"
+                app:cornerRadius="@dimen/corner_button"
                 app:backgroundTint="@color/white" />
 
         </LinearLayout>
@@ -323,8 +323,8 @@
                 app:iconSize="24dp"
                 app:iconTint="@color/white"
                 app:backgroundTint="@color/btn_back"
-                app:cornerRadius="14dp"
-                app:elevation="0dp"
+                app:cornerRadius="@dimen/corner_button"
+                app:elevation="2dp"
                 android:contentDescription="@string/btn_back" />
 
             <com.google.android.material.button.MaterialButton
@@ -338,8 +338,8 @@
                 android:textStyle="bold"
                 android:textAllCaps="true"
                 app:backgroundTint="@color/gray_back"
-                app:cornerRadius="14dp"
-                app:elevation="0dp" />
+                app:cornerRadius="@dimen/corner_button"
+                app:elevation="2dp" />
 
         </LinearLayout>
 

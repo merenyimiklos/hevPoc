@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="witness_stroke_width">2dp</dimen>
+
+    <!-- Standard corner radii -->
+    <dimen name="corner_card">28dp</dimen>
+    <dimen name="corner_button">16dp</dimen>
+    <dimen name="corner_badge">8dp</dimen>
+
+    <!-- Standard touch target heights -->
+    <dimen name="btn_height_action">60dp</dimen>
+    <dimen name="btn_height_back">60dp</dimen>
+
+    <!-- Spacing -->
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_s">8dp</dimen>
+    <dimen name="spacing_m">14dp</dimen>
+    <dimen name="spacing_l">20dp</dimen>
+    <dimen name="spacing_xl">28dp</dimen>
 </resources>

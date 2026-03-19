@@ -41,7 +41,7 @@
             android:layout_marginTop="2dp"
             android:text="@string/terms_powered_by"
             android:textColor="#CCffffff"
-            android:textSize="11sp" />
+            android:textSize="12sp" />
 
         <View
             android:layout_width="36dp"
@@ -175,8 +175,8 @@
                 android:textAllCaps="false"
                 android:textColor="@color/text_primary"
                 app:backgroundTint="@color/border_default"
-                app:cornerRadius="14dp"
-                app:elevation="0dp" />
+                app:cornerRadius="@dimen/corner_button"
+                app:elevation="2dp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnHearingNo"
@@ -190,8 +190,8 @@
                 android:textAllCaps="false"
                 android:textColor="@color/text_primary"
                 app:backgroundTint="@color/border_default"
-                app:cornerRadius="14dp"
-                app:elevation="0dp" />
+                app:cornerRadius="@dimen/corner_button"
+                app:elevation="2dp" />
 
         </LinearLayout>
 
@@ -212,8 +212,8 @@
             android:textStyle="bold"
             android:textAllCaps="false"
             app:backgroundTint="@color/gray_back"
-            app:cornerRadius="14dp"
-            app:elevation="0dp" />
+            app:cornerRadius="@dimen/corner_button"
+            app:elevation="2dp" />
 
     </LinearLayout>
 
