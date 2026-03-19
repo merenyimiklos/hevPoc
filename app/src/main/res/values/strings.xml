@@ -23,4 +23,17 @@
 
     <string name="btn_exit">KILÉP</string>
     <string name="btn_accept">ELFOGAD</string>
+
+    <!-- Personal data screen -->
+    <string name="personal_data_title">SZEMÉLYES ADATOK</string>
+    <string name="personal_data_required">Kötelező</string>
+    <string name="personal_data_name">Név</string>
+    <string name="personal_data_dob">Születési idő</string>
+    <string name="personal_data_address">Lakcím</string>
+    <string name="personal_data_hearing">Hallássérült</string>
+    <string name="personal_data_yes">Igen</string>
+    <string name="personal_data_no">Nem</string>
+    <string name="personal_data_save">MENTÉS</string>
+    <string name="personal_data_toast_required">Kérjük töltse ki az összes kötelező mezőt.</string>
+    <string name="personal_data_saved">Adatok sikeresen mentve.</string>
 </resources>
