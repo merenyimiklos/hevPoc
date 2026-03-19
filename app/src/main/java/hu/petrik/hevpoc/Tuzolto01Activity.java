@@ -33,24 +33,22 @@ import java.util.List;
 import java.util.Locale;
 
 /**
- * Mento01 – ambulance SMS finalization / confirmation screen.
- * Receives age and categories from Mento02Activity, shows live GPS coordinates,
+ * Tuzolto01 – fire department SMS finalization screen.
+ * Receives categories from Tuzolto02Activity, shows live GPS coordinates,
  * lets user pick person count and mark life threat, then opens SMS app.
  */
-public class Mento01Activity extends AppCompatActivity {
+public class Tuzolto01Activity extends AppCompatActivity {
 
     private static final int REQUEST_LOCATION_PERMISSION = 1001;
     private static final String PREFS_NAME = "user_data";
 
-    private MaterialButton btnCountOne, btnCountMany, btnLifeThreat;
-    private MaterialButton btnSend;
+    private MaterialButton btnCountOne, btnCountMany, btnLifeThreat, btnSend;
     private TextInputEditText etExtra;
     private TextView tvPreview, tvLocation;
 
     private MaterialButton selectedCount = null;
     private boolean lifeThreatActive = false;
 
-    private String ageLabel = "";
     private List<String> categories = new ArrayList<>();
 
     // Location state
@@ -65,36 +63,32 @@ public class Mento01Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mento01);
+        setContentView(R.layout.activity_tuzolto01);
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.mento01Root), (v, insets) -> {
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.tuzolto01Root), (v, insets) -> {
             Insets bars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(bars.left, bars.top, bars.right, bars.bottom);
             return insets;
         });
 
-        // Retrieve data passed from Mento02
         if (getIntent() != null) {
-            ageLabel = getIntent().getStringExtra(Mento02Activity.EXTRA_AGE);
-            if (ageLabel == null) ageLabel = "";
-            List<String> cats = getIntent().getStringArrayListExtra(Mento02Activity.EXTRA_CATEGORIES);
+            List<String> cats = getIntent().getStringArrayListExtra(Tuzolto02Activity.EXTRA_CATEGORIES);
             if (cats != null) categories = cats;
         }
 
-        btnCountOne  = findViewById(R.id.btnCountOne);
-        btnCountMany = findViewById(R.id.btnCountMany);
+        btnCountOne   = findViewById(R.id.btnCountOne);
+        btnCountMany  = findViewById(R.id.btnCountMany);
         btnLifeThreat = findViewById(R.id.btnLifeThreat);
-        btnSend      = findViewById(R.id.btnSendSms);
-        etExtra      = findViewById(R.id.etExtra);
-        tvPreview    = findViewById(R.id.tvPreview);
-        tvLocation   = findViewById(R.id.tvLocation);
+        btnSend       = findViewById(R.id.btnSendSms);
+        etExtra       = findViewById(R.id.etExtra);
+        tvPreview     = findViewById(R.id.tvPreview);
+        tvLocation    = findViewById(R.id.tvLocation);
 
-        MaterialButton btnBack = findViewById(R.id.btnMento01Back);
+        MaterialButton btnBack = findViewById(R.id.btnTuzolto01Back);
 
         btnCountOne.setOnClickListener(v -> selectCount(btnCountOne));
         btnCountMany.setOnClickListener(v -> selectCount(btnCountMany));
         btnLifeThreat.setOnClickListener(v -> toggleLifeThreat());
-
         btnBack.setOnClickListener(v -> finish());
 
         btnSend.setOnClickListener(v -> {
@@ -105,7 +99,6 @@ public class Mento01Activity extends AppCompatActivity {
             sendSms();
         });
 
-        // Update preview whenever extra message changes
         etExtra.addTextChangedListener(new TextWatcher() {
             @Override public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
             @Override public void onTextChanged(CharSequence s, int start, int before, int count) {}
@@ -221,9 +214,7 @@ public class Mento01Activity extends AppCompatActivity {
     }
 
     private void selectCount(MaterialButton btn) {
-        if (selectedCount != null) {
-            setButtonSelected(selectedCount, false);
-        }
+        if (selectedCount != null) setButtonSelected(selectedCount, false);
         if (selectedCount == btn) {
             selectedCount = null;
         } else {
@@ -242,7 +233,7 @@ public class Mento01Activity extends AppCompatActivity {
 
     private void setButtonSelected(MaterialButton btn, boolean selected) {
         int bgColor = selected
-                ? ContextCompat.getColor(this, R.color.red_ambulance)
+                ? ContextCompat.getColor(this, R.color.yellow_fire)
                 : ContextCompat.getColor(this, R.color.white);
         int textColor = selected
                 ? ContextCompat.getColor(this, R.color.white)
@@ -261,16 +252,11 @@ public class Mento01Activity extends AppCompatActivity {
 
     private void updatePreview() {
         StringBuilder sb = new StringBuilder();
-        sb.append(getString(R.string.mento01_preview_header)).append("\n");
+        sb.append("SOS üzenet\n");
 
-        if (!ageLabel.isEmpty()) {
-            sb.append(ageLabel);
-            if (!categories.isEmpty()) sb.append("; ");
-        }
         if (!categories.isEmpty()) {
-            sb.append(android.text.TextUtils.join(", ", categories));
+            sb.append(android.text.TextUtils.join(", ", categories)).append("\n");
         }
-        sb.append("\n");
 
         sb.append("Segélykérő helyzete:\n");
         if (!Double.isNaN(currentLat)) {
@@ -282,10 +268,10 @@ public class Mento01Activity extends AppCompatActivity {
         } else {
             sb.append("(Helymeghatározás folyamatban...)\n");
         }
-        sb.append(getString(R.string.mento01_preview_footer)).append("\n");
+        sb.append("Kérem küldjenek segítséget!\n");
 
         if (lifeThreatActive) {
-            sb.append(getString(R.string.mento01_life_threat)).append("\n");
+            sb.append("ÉLETVESZÉLY\n");
         }
         if (selectedCount != null) {
             sb.append(selectedCount.getText()).append("\n");
@@ -322,4 +308,3 @@ public class Mento01Activity extends AppCompatActivity {
         }
     }
 }
-
