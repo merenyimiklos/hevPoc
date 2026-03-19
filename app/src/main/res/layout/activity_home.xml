@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/homeRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/red_ambulance">
+
+    <!-- ═══ HEADER (red, ~22% of screen) ═══ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.2"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="4dp">
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="@string/terms_app_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/terms_app_name"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="@string/terms_powered_by"
+            android:textColor="#CCffffff"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+    <!-- ═══ SUBTITLE ROW with overflow menu ═══ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="4dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/home_subtitle"
+            android:textColor="#CCffffff"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.1" />
+
+        <ImageButton
+            android:id="@+id/btnMenu"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_more_vert"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/home_menu"
+            android:tint="@color/white"
+            android:padding="12dp" />
+
+    </LinearLayout>
+
+    <!-- ═══ WHITE CARD (fills the rest, ~78% of screen) ═══ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.8"
+        android:orientation="vertical"
+        android:background="@drawable/bg_card_top_rounded"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <!-- MENTŐ – ambulance / medical -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAmbulance"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:text="@string/home_ambulance"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:gravity="start|center_vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="20dp"
+            app:icon="@drawable/ic_medical_cross"
+            app:iconSize="52dp"
+            app:iconGravity="end"
+            app:iconTint="@color/white"
+            app:iconPadding="0dp"
+            app:backgroundTint="@color/red_ambulance"
+            app:cornerRadius="18dp"
+            app:elevation="0dp" />
+
+        <!-- TŰZOLTÓ – fire department -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnFire"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:text="@string/home_fire"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:gravity="start|center_vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="20dp"
+            app:icon="@drawable/ic_fire"
+            app:iconSize="52dp"
+            app:iconGravity="end"
+            app:iconTint="@color/white"
+            app:iconPadding="0dp"
+            app:backgroundTint="@color/yellow_fire"
+            app:cornerRadius="18dp"
+            app:elevation="0dp" />
+
+        <!-- RENDŐR – police -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPolice"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:text="@string/home_police"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:gravity="start|center_vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="20dp"
+            app:icon="@drawable/ic_police"
+            app:iconSize="52dp"
+            app:iconGravity="end"
+            app:iconTint="@color/white"
+            app:iconPadding="0dp"
+            app:backgroundTint="@color/blue_police"
+            app:cornerRadius="18dp"
+            app:elevation="0dp" />
+
+        <!-- SZEMTANÚ – witness (toggleable) -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnWitness"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/home_witness"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:gravity="start|center_vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="20dp"
+            app:icon="@drawable/ic_eye"
+            app:iconSize="52dp"
+            app:iconGravity="end"
+            app:iconTint="@color/white"
+            app:iconPadding="0dp"
+            app:backgroundTint="@color/green_action"
+            app:cornerRadius="18dp"
+            app:strokeWidth="0dp"
+            app:elevation="0dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

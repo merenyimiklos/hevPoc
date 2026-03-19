@@ -36,4 +36,17 @@
     <string name="personal_data_save">MENTÉS</string>
     <string name="personal_data_toast_required">Kérjük töltse ki az összes kötelező mezőt.</string>
     <string name="personal_data_saved">Adatok sikeresen mentve.</string>
+
+    <!-- Home screen -->
+    <string name="home_subtitle">HÁROM SZERVEZET, EGY SZÁM</string>
+    <string name="home_menu">Menü</string>
+    <string name="home_ambulance">MENTŐ</string>
+    <string name="home_fire">TŰZOLTÓ</string>
+    <string name="home_police">RENDŐR</string>
+    <string name="home_witness">SZEMTANÚ</string>
+    <string name="home_menu_personal_data">Személyes adatok</string>
+    <string name="home_menu_help">Súgó</string>
+    <string name="home_menu_evoaid">EvoAId alkalmazás</string>
+    <!-- Base EvoAId website; used for both Help and EvoAId app menu items until final URLs are known -->
+    <string name="evoaid_base_url">https://evoaid.com</string>
 </resources>

@@ -1,6 +1,7 @@
 package hu.petrik.hevpoc;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.ColorStateList;
 import android.os.Bundle;
@@ -111,5 +112,7 @@ public class MainActivity extends AppCompatActivity {
                 .apply();
 
         Toast.makeText(this, R.string.personal_data_saved, Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(this, HomeActivity.class));
+        finish();
     }
 }
