@@ -1,6 +1,7 @@
 package hu.petrik.hevpoc;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.ColorStateList;
 import android.net.Uri;
 import android.os.Bundle;
@@ -18,6 +19,9 @@ import com.google.android.material.button.MaterialButton;
 
 public class TermsActivity extends AppCompatActivity {
 
+    private static final String PREFS_NAME = "user_data";
+    private static final String KEY_TERMS_ACCEPTED = "terms_accepted";
+
     private CheckBox cbAuf;
     private CheckBox cbPrivacy;
     private MaterialButton btnAccept;
@@ -25,6 +29,17 @@ public class TermsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Skip setup screens if user already accepted terms and filled in their data
+        SharedPreferences prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+        if (prefs.getBoolean(KEY_TERMS_ACCEPTED, false)) {
+            String name = prefs.getString("name", "");
+            Class<?> dest = name.isEmpty() ? MainActivity.class : HomeActivity.class;
+            startActivity(new Intent(this, dest));
+            finish();
+            return;
+        }
+
         setContentView(R.layout.activity_terms);
 
         // Apply window insets so content is not hidden behind status/nav bars.
@@ -64,6 +79,10 @@ public class TermsActivity extends AppCompatActivity {
         // Accept: require both checkboxes before proceeding
         btnAccept.setOnClickListener(v -> {
             if (cbAuf.isChecked() && cbPrivacy.isChecked()) {
+                getSharedPreferences(PREFS_NAME, MODE_PRIVATE)
+                        .edit()
+                        .putBoolean(KEY_TERMS_ACCEPTED, true)
+                        .apply();
                 startActivity(new Intent(TermsActivity.this, MainActivity.class));
                 finish();
             } else {

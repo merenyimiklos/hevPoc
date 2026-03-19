@@ -122,7 +122,7 @@
             android:padding="8dp"
             android:text="@string/location_waiting"
             android:textColor="@color/blue_police"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             android:gravity="center_vertical"
             android:singleLine="false"
@@ -154,7 +154,7 @@
             android:layout_marginBottom="4dp"
             android:text="@string/mento01_preview_label"
             android:textColor="@color/text_secondary"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:textStyle="bold" />
 
         <!-- Message preview content -->
@@ -167,7 +167,7 @@
             android:padding="10dp"
             android:text=""
             android:textColor="@color/text_primary"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:gravity="top" />
 
         <!-- Bottom action row -->
