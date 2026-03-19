@@ -1,3 +1,26 @@
 <resources>
     <string name="app_name">HevPoc</string>
+
+    <!-- Terms screen -->
+    <string name="terms_app_name">112 SOS Hallássérülteknek</string>
+    <string name="terms_powered_by">Powered by EvoAId</string>
+    <string name="terms_title">HÁROM SZERVEZET · EGY SZÁM</string>
+    <string name="terms_intro">Az app használatához kérjük fogadja el az alábbi feltételeket.</string>
+
+    <string name="terms_auf_short">Általános Üzleti\nFeltételek (ÁÜF)</string>
+    <string name="terms_auf_tap">Koppintson az olvasáshoz →</string>
+    <string name="terms_auf_url">https://evoaid.com/docs/EvoAId_AUF_112sms.pdf</string>
+
+    <string name="terms_privacy_short">Adatkezelési\nTájékoztató</string>
+    <string name="terms_privacy_tap">Koppintson az olvasáshoz →</string>
+    <string name="terms_privacy_url">https://evoaid.com/docs/Adatkezelesi-tajekoztato_EvoAId.pdf</string>
+
+    <string name="terms_accept_auf">Elfogadom az Általános Üzleti Feltételeket *</string>
+    <string name="terms_accept_privacy">Elfogadom az Adatkezelési Tájékoztatót *</string>
+    <string name="terms_disclaimer">* Elutasítás esetén az app nem használható</string>
+
+    <string name="terms_toast_required">Az alkalmazás használatához fogadja el mindkét feltételt.</string>
+
+    <string name="btn_exit">KILÉP</string>
+    <string name="btn_accept">ELFOGAD</string>
 </resources>
