@@ -4,16 +4,22 @@ import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.PopupMenu;
-import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.core.widget.ImageViewCompat;
 
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.button.MaterialButton;
+import com.google.android.material.switchmaterial.SwitchMaterial;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -36,42 +42,32 @@ public class HomeActivity extends AppCompatActivity {
         });
 
         MaterialButton btnAmbulance = findViewById(R.id.btnAmbulance);
-        MaterialButton btnFire = findViewById(R.id.btnFire);
-        MaterialButton btnPolice = findViewById(R.id.btnPolice);
-        MaterialButton btnWitness = findViewById(R.id.btnWitness);
-        ImageButton btnMenu = findViewById(R.id.btnMenu);
+        MaterialButton btnFire      = findViewById(R.id.btnFire);
+        MaterialButton btnPolice    = findViewById(R.id.btnPolice);
 
-        // Restore witness button appearance after configuration change
-        applyWitnessState(btnWitness, witnessActive);
+        SwitchMaterial switchWitness   = findViewById(R.id.switchWitness);
+        ImageView ivWitnessIcon        = findViewById(R.id.ivWitnessIcon);
+        TextView tvWitnessStatus       = findViewById(R.id.tvWitnessStatus);
+        ImageButton btnMenu            = findViewById(R.id.btnMenu);
 
-        // Emergency service buttons – connect to dispatch backend when logic is wired up
-        btnAmbulance.setOnClickListener(v -> { /* dispatch: ambulance */ });
+        // Restore witness state after configuration change
+        switchWitness.setChecked(witnessActive);
+        applyWitnessState(ivWitnessIcon, tvWitnessStatus, witnessActive);
+
+        // Emergency service buttons
+        btnAmbulance.setOnClickListener(v ->
+                startActivity(new Intent(HomeActivity.this, Mento02Activity.class)));
         btnFire.setOnClickListener(v -> { /* dispatch: fire department */ });
         btnPolice.setOnClickListener(v -> { /* dispatch: police */ });
 
-        // Witness button toggles the user's witness role on/off
-        btnWitness.setOnClickListener(v -> {
-            witnessActive = !witnessActive;
-            applyWitnessState(btnWitness, witnessActive);
+        // Witness toggle via switch
+        switchWitness.setOnCheckedChangeListener((btn, checked) -> {
+            witnessActive = checked;
+            applyWitnessState(ivWitnessIcon, tvWitnessStatus, witnessActive);
         });
 
-        // Overflow menu
-        btnMenu.setOnClickListener(v -> {
-            PopupMenu popup = new PopupMenu(this, v);
-            popup.getMenuInflater().inflate(R.menu.home_menu, popup.getMenu());
-            popup.setOnMenuItemClickListener(item -> {
-                int id = item.getItemId();
-                if (id == R.id.menu_personal_data) {
-                    startActivity(new Intent(HomeActivity.this, MainActivity.class));
-                    return true;
-                } else if (id == R.id.menu_help || id == R.id.menu_evoaid) {
-                    openUrl(getString(R.string.evoaid_base_url));
-                    return true;
-                }
-                return false;
-            });
-            popup.show();
-        });
+        // Help / overflow menu – redesigned as BottomSheetDialog
+        btnMenu.setOnClickListener(v -> showHelpSheet());
     }
 
     @Override
@@ -80,28 +76,50 @@ public class HomeActivity extends AppCompatActivity {
         outState.putBoolean(KEY_WITNESS_ACTIVE, witnessActive);
     }
 
-    private void applyWitnessState(MaterialButton btn, boolean active) {
-        if (active) {
-            btn.setBackgroundTintList(
-                    ColorStateList.valueOf(ContextCompat.getColor(this, R.color.green_action)));
-            btn.setTextColor(ContextCompat.getColor(this, R.color.white));
-            btn.setIcon(ContextCompat.getDrawable(this, R.drawable.ic_eye));
-            btn.setIconTint(ColorStateList.valueOf(ContextCompat.getColor(this, R.color.white)));
-            btn.setStrokeWidth(0);
-        } else {
-            btn.setBackgroundTintList(
-                    ColorStateList.valueOf(ContextCompat.getColor(this, R.color.white)));
-            btn.setTextColor(ContextCompat.getColor(this, R.color.gray_witness));
-            btn.setIcon(ContextCompat.getDrawable(this, R.drawable.ic_eye_off));
-            btn.setIconTint(ColorStateList.valueOf(
-                    ContextCompat.getColor(this, R.color.gray_witness)));
-            btn.setStrokeColor(ColorStateList.valueOf(
-                    ContextCompat.getColor(this, R.color.border_default)));
-            btn.setStrokeWidth(getResources().getDimensionPixelSize(R.dimen.witness_stroke_width));
-        }
+    private void applyWitnessState(ImageView icon, TextView status, boolean active) {
+        int iconTint = active
+                ? getColor(R.color.green_action)
+                : getColor(R.color.gray_witness);
+        int statusColor = active
+                ? getColor(R.color.green_action)
+                : getColor(R.color.gray_witness);
+        int statusText = active
+                ? R.string.home_witness_on
+                : R.string.home_witness_off;
+
+        ImageViewCompat.setImageTintList(icon, ColorStateList.valueOf(iconTint));
+        status.setTextColor(statusColor);
+        status.setText(statusText);
+    }
+
+    private void showHelpSheet() {
+        BottomSheetDialog sheet = new BottomSheetDialog(this);
+        View sheetView = LayoutInflater.from(this)
+                .inflate(R.layout.bottom_sheet_help, null);
+
+        LinearLayout itemPersonalData = sheetView.findViewById(R.id.sheetItemPersonalData);
+        LinearLayout itemHelp         = sheetView.findViewById(R.id.sheetItemHelp);
+        LinearLayout itemEvoaid       = sheetView.findViewById(R.id.sheetItemEvoaid);
+
+        itemPersonalData.setOnClickListener(v -> {
+            sheet.dismiss();
+            startActivity(new Intent(HomeActivity.this, MainActivity.class));
+        });
+        itemHelp.setOnClickListener(v -> {
+            sheet.dismiss();
+            openUrl(getString(R.string.evoaid_base_url));
+        });
+        itemEvoaid.setOnClickListener(v -> {
+            sheet.dismiss();
+            openUrl(getString(R.string.evoaid_base_url));
+        });
+
+        sheet.setContentView(sheetView);
+        sheet.show();
     }
 
     private void openUrl(String url) {
         startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
     }
 }
+

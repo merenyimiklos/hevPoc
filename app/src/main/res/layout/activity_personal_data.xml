@@ -98,7 +98,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:inputType="textPersonName"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:textColor="@color/text_input" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -122,6 +123,7 @@
                 android:clickable="true"
                 android:inputType="none"
                 android:textSize="16sp"
+                android:textColor="@color/text_input"
                 android:cursorVisible="false" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -140,7 +142,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:inputType="textPostalAddress"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:textColor="@color/text_input" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -208,7 +211,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             android:textAllCaps="false"
-            app:backgroundTint="@color/green_action"
+            app:backgroundTint="@color/gray_back"
             app:cornerRadius="14dp"
             app:elevation="0dp" />
 

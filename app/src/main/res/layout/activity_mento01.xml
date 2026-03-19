@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mento01Root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/red_ambulance">
+
+    <!-- ═══ HEADER ═══ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/home_ambulance"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.1" />
+
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:src="@drawable/ic_medical_cross"
+            android:contentDescription="@string/home_ambulance" />
+
+    </LinearLayout>
+
+    <!-- ═══ WHITE CARD ═══ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.2"
+        android:orientation="vertical"
+        android:background="@drawable/bg_card_top_rounded"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="12dp">
+
+        <!-- EGY / TÖBB ÉRINTETT -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCountOne"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                android:text="@string/mento01_one"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:textAllCaps="true"
+                app:strokeColor="@color/red_ambulance"
+                app:strokeWidth="2dp"
+                app:cornerRadius="14dp"
+                app:backgroundTint="@color/white" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCountMany"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                android:text="@string/mento01_many"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:textAllCaps="true"
+                app:strokeColor="@color/red_ambulance"
+                app:strokeWidth="2dp"
+                app:cornerRadius="14dp"
+                app:backgroundTint="@color/white" />
+
+        </LinearLayout>
+
+        <!-- ÉLETVESZÉLY (full width) -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLifeThreat"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="8dp"
+            android:text="@string/mento01_life_threat"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:textAllCaps="true"
+            app:strokeColor="@color/red_ambulance"
+            app:strokeWidth="2dp"
+            app:cornerRadius="14dp"
+            app:backgroundTint="@color/white" />
+
+        <!-- "További üzenet" text input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilExtra"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/mento01_extra_hint">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etExtra"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:inputType="textMultiLine"
+                android:textSize="15sp"
+                android:textColor="@color/text_primary" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Message preview label -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="@string/mento01_preview_label"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <!-- Message preview content -->
+        <TextView
+            android:id="@+id/tvPreview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@drawable/bg_cat_btn_normal"
+            android:padding="12dp"
+            android:text=""
+            android:textColor="@color/text_primary"
+            android:textSize="13sp"
+            android:gravity="top" />
+
+        <!-- Spacer -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" />
+
+        <!-- Bottom action row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMento01Back"
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                app:icon="@drawable/ic_arrow_back"
+                app:iconGravity="textStart"
+                app:iconSize="24dp"
+                app:iconTint="@color/white"
+                app:backgroundTint="@color/gray_back"
+                app:cornerRadius="14dp"
+                app:elevation="0dp"
+                android:contentDescription="@string/btn_back" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSendSms"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/mento01_send"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                app:backgroundTint="@color/gray_back"
+                app:cornerRadius="14dp"
+                app:elevation="0dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

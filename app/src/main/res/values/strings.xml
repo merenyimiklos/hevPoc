@@ -43,10 +43,46 @@
     <string name="home_ambulance">MENTŐ</string>
     <string name="home_fire">TŰZOLTÓ</string>
     <string name="home_police">RENDŐR</string>
-    <string name="home_witness">SZEMTANÚ</string>
+    <string name="home_witness">Szemtanú vagyok</string>
+    <string name="home_witness_label">SZEMTANÚ</string>
+    <string name="home_witness_on">Bekapcsolt</string>
+    <string name="home_witness_off">Kikapcsolt</string>
     <string name="home_menu_personal_data">Személyes adatok</string>
     <string name="home_menu_help">Súgó</string>
     <string name="home_menu_evoaid">EvoAId alkalmazás</string>
     <!-- Base EvoAId website; used for both Help and EvoAId app menu items until final URLs are known -->
     <string name="evoaid_base_url">https://evoaid.com</string>
+
+    <!-- Shared back button -->
+    <string name="btn_back">Vissza</string>
+
+    <!-- Mento02 – category selection screen -->
+    <string name="mento02_age_label">Válassza ki a beavatkozást igénylő korcsoportját!</string>
+    <string name="mento02_age_0_1">0–1 ÉV</string>
+    <string name="mento02_age_1_14">1–14 ÉV</string>
+    <string name="mento02_age_14plus">14+ ÉV</string>
+    <string name="mento02_cat_label">Kérjük, válasszon egy, vagy több kategóriát!</string>
+    <string name="mento02_cat_home">OTTHONI BALESET</string>
+    <string name="mento02_cat_road">KÖZÚTI BALESET</string>
+    <string name="mento02_cat_injury">SÉRÜLÉS</string>
+    <string name="mento02_cat_ill">ROSSZULLÉT</string>
+    <string name="mento02_cat_trapped">JÁRMŰBE / ÉPÜLETBE BESZORULÁS</string>
+    <string name="mento02_cat_allergy">ALLERGIÁS ROHAM</string>
+    <string name="mento02_cat_poison">MÉRGEZÉS</string>
+    <string name="mento02_cat_choke">FULLADÁS</string>
+    <string name="mento02_next">KÖVETKEZŐ</string>
+    <string name="mento02_toast_age">Kérjük, válassza ki a korcsoportot!</string>
+    <string name="mento02_toast_category">Kérjük, válasszon legalább egy kategóriát!</string>
+
+    <!-- Mento01 – SMS finalization screen -->
+    <string name="mento01_one">EGY ÉRINTETT</string>
+    <string name="mento01_many">TÖBB ÉRINTETT</string>
+    <string name="mento01_life_threat">ÉLETVESZÉLY</string>
+    <string name="mento01_extra_hint">További üzenet (opcionális)</string>
+    <string name="mento01_preview_label">SOS üzenet előnézet</string>
+    <string name="mento01_preview_header">SOS üzenet\nSegélykérő helyzete:</string>
+    <string name="mento01_preview_footer">Kérem küldjenek segítséget!</string>
+    <string name="mento01_send">SMS VÉGLEGESÍTÉSE</string>
+    <string name="mento01_toast_count">Kérjük, válassza ki az érintettek számát!</string>
+    <string name="mento01_toast_sent">SOS SMS elküldve!</string>
 </resources>

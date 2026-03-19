@@ -25,6 +25,12 @@
         <activity
             android:name=".HomeActivity"
             android:exported="false" />
+        <activity
+            android:name=".Mento02Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Mento01Activity"
+            android:exported="false" />
     </application>
 
 </manifest>
