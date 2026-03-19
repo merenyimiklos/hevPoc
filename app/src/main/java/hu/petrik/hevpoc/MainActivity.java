@@ -73,7 +73,23 @@ public class MainActivity extends AppCompatActivity {
         // Save
         btnSave.setOnClickListener(v -> saveData());
 
+        loadSavedData();
         updateSaveButton();
+    }
+
+    private void loadSavedData() {
+        SharedPreferences prefs = getSharedPreferences(PREFS_NAME, MODE_PRIVATE);
+        String name = prefs.getString("name", "");
+        String dob = prefs.getString("dob", "");
+        String address = prefs.getString("address", "");
+
+        if (!name.isEmpty()) etName.setText(name);
+        if (!dob.isEmpty()) etDob.setText(dob);
+        if (!address.isEmpty()) etAddress.setText(address);
+
+        if (prefs.contains("hearing_impaired")) {
+            setHearing(prefs.getBoolean("hearing_impaired", false));
+        }
     }
 
     private void showDatePicker() {

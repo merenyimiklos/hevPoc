@@ -1,7 +1,9 @@
 package hu.petrik.hevpoc;
 
+import android.Manifest;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.content.res.ColorStateList;
 import android.net.Uri;
 import android.os.Bundle;
@@ -10,6 +12,7 @@ import android.widget.CompoundButton;
 import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -21,6 +24,7 @@ public class TermsActivity extends AppCompatActivity {
 
     private static final String PREFS_NAME = "user_data";
     private static final String KEY_TERMS_ACCEPTED = "terms_accepted";
+    private static final int REQUEST_LOCATION_PERMISSION = 1001;
 
     private CheckBox cbAuf;
     private CheckBox cbPrivacy;
@@ -41,6 +45,18 @@ public class TermsActivity extends AppCompatActivity {
         }
 
         setContentView(R.layout.activity_terms);
+
+        // Request location permission immediately on first launch so the dialog
+        // appears before the user interacts with the terms screen.
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this,
+                    new String[]{
+                            Manifest.permission.ACCESS_FINE_LOCATION,
+                            Manifest.permission.ACCESS_COARSE_LOCATION
+                    },
+                    REQUEST_LOCATION_PERMISSION);
+        }
 
         // Apply window insets so content is not hidden behind status/nav bars.
         // The red header behind the status bar creates a visually seamless look.
