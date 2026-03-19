@@ -192,7 +192,7 @@
                 app:iconGravity="textStart"
                 app:iconSize="24dp"
                 app:iconTint="@color/white"
-                app:backgroundTint="@color/gray_back"
+                app:backgroundTint="@color/btn_back"
                 app:cornerRadius="14dp"
                 app:elevation="0dp"
                 android:contentDescription="@string/btn_back" />

@@ -17,4 +17,5 @@
 
     <color name="green_action">#22C55E</color>
     <color name="gray_back">#9CA3AF</color>
+    <color name="btn_back">#475569</color>
 </resources>
