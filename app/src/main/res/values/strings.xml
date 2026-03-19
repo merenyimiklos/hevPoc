@@ -114,6 +114,30 @@
     <string name="tuzolto02_next">KÖVETKEZŐ</string>
     <string name="tuzolto02_toast_category">Kérjük, válasszon legalább egy kategóriát!</string>
 
+    <!-- Sugo (Help) screen -->
+    <string name="sugo_title">Súgó</string>
+    <string name="sugo_section1_title">ELŐZETES BEÁLLÍTÁSOK</string>
+    <string name="sugo_step1_number">1</string>
+    <string name="sugo_step1_title">Személyes adatok</string>
+    <string name="sugo_step1_desc">Töltse ki hiánytalanul az adatokat a Menüben, hogy a segítségnyújtáshoz szükséges információk automatikusan hozzárendelődjenek.</string>
+    <string name="sugo_step2_number">2</string>
+    <string name="sugo_step2_title">Engedélyek</string>
+    <string name="sugo_step2_desc">Az SMS küldéshez engedélyezze a helyzetmeghatározást (felugró ablakban).</string>
+    <string name="sugo_section2_title">VÉSZJELZÉS KÜLDÉS</string>
+    <string name="sugo_step3_number">3</string>
+    <string name="sugo_step3_title">SMS összeállítása</string>
+    <string name="sugo_step3_desc">Válasszon kategóriát és szerepet (érintett vagy szemtanú). Szemtanúként a szem piktogramot is nyomja meg.</string>
+    <string name="sugo_step4_number">4</string>
+    <string name="sugo_step4_title">SMS véglegesítése</string>
+    <string name="sugo_step4_desc">Az SMS VÉGLEGESÍTÉSE gomb megnyomásával az üzenet beépül az SMS küldő programba, és onnan küldhető el a 112-nek.</string>
+    <string name="sugo_important_title">⚠ FONTOS</string>
+    <string name="sugo_important_desc">Extra helyleírást is megadhat (pl. beltérben, 3. emelet), ha a GPS helymeghatározás nem pontos.</string>
+
+    <!-- EvoAId screen -->
+    <string name="evoaid_title">EvoAId alkalmazás</string>
+    <string name="evoaid_desc">A 112 SOS Hallássérülteknek alkalmazást az EvoAId Kft. fejlesztette a 112 számára. Az EvoAId személybiztonsági alkalmazás kézi beavatkozás nélküli vészjelzést is biztosít — három lábdobogással vagy három koppintással a zseben keresztül.</string>
+    <string name="evoaid_website_btn">WEBOLDAL MEGNYITÁSA</string>
+
     <!-- GPS / Location -->
     <string name="location_waiting">📍 Helymeghatározás…</string>
     <string name="location_permission_needed">📍 Hely-engedély szükséges</string>

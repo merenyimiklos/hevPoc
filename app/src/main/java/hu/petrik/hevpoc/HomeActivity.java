@@ -109,11 +109,11 @@ public class HomeActivity extends AppCompatActivity {
         });
         itemHelp.setOnClickListener(v -> {
             sheet.dismiss();
-            openUrl(getString(R.string.evoaid_base_url));
+            startActivity(new Intent(HomeActivity.this, SugoActivity.class));
         });
         itemEvoaid.setOnClickListener(v -> {
             sheet.dismiss();
-            openUrl(getString(R.string.evoaid_base_url));
+            startActivity(new Intent(HomeActivity.this, EvoaidActivity.class));
         });
 
         sheet.setContentView(sheetView);
