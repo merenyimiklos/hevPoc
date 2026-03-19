@@ -57,8 +57,10 @@ public class HomeActivity extends AppCompatActivity {
         // Emergency service buttons
         btnAmbulance.setOnClickListener(v ->
                 startActivity(new Intent(HomeActivity.this, Mento02Activity.class)));
-        btnFire.setOnClickListener(v -> { /* dispatch: fire department */ });
-        btnPolice.setOnClickListener(v -> { /* dispatch: police */ });
+        btnFire.setOnClickListener(v ->
+                startActivity(new Intent(HomeActivity.this, Tuzolto02Activity.class)));
+        btnPolice.setOnClickListener(v ->
+                startActivity(new Intent(HomeActivity.this, Rendor02Activity.class)));
 
         // Witness toggle via switch
         switchWitness.setOnCheckedChangeListener((btn, checked) -> {

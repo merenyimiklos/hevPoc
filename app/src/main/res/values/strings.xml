@@ -80,9 +80,45 @@
     <string name="mento01_life_threat">ÉLETVESZÉLY</string>
     <string name="mento01_extra_hint">További üzenet (opcionális)</string>
     <string name="mento01_preview_label">SOS üzenet előnézet</string>
-    <string name="mento01_preview_header">SOS üzenet\nSegélykérő helyzete:</string>
+    <string name="mento01_preview_header">SOS üzenet</string>
     <string name="mento01_preview_footer">Kérem küldjenek segítséget!</string>
     <string name="mento01_send">SMS VÉGLEGESÍTÉSE</string>
     <string name="mento01_toast_count">Kérjük, válassza ki az érintettek számát!</string>
     <string name="mento01_toast_sent">SOS SMS elküldve!</string>
+
+    <!-- Rendor02 – police category selection screen -->
+    <string name="rendor_title">RENDŐRSÉG</string>
+    <string name="rendor02_cat_label">Kérjük, válasszon egy, vagy több kategóriát!</string>
+    <string name="rendor02_cat_kidnap">EMBERRABLÁS</string>
+    <string name="rendor02_cat_attack">TÁMADÁS</string>
+    <string name="rendor02_cat_robbery">RABLÁS</string>
+    <string name="rendor02_cat_harassment">SZEXUÁLIS ZAKLATÁS</string>
+    <string name="rendor02_cat_bank_robbery">BANKRABLÁS</string>
+    <string name="rendor02_cat_armed">FEGYVERES ELKÖVETŐ</string>
+    <string name="rendor02_cat_property">VAGYON ELLENI CSELEKMÉNY</string>
+    <string name="rendor02_cat_property_docs">OKMÁNYOK</string>
+    <string name="rendor02_cat_property_burglary">BETÖRÉS</string>
+    <string name="rendor02_cat_property_vehicle">JÁRMŰ</string>
+    <string name="rendor02_cat_property_cash">KÉSZPÉNZ</string>
+    <string name="rendor02_cat_other_hint">Egyéb</string>
+    <string name="rendor02_next">KÖVETKEZŐ</string>
+    <string name="rendor02_toast_category">Kérjük, válasszon legalább egy kategóriát!</string>
+
+    <!-- Tuzolto02 – fire category selection screen -->
+    <string name="tuzolto_title">TŰZOLTÓ</string>
+    <string name="tuzolto02_cat_label">Kérjük, válasszon egy, vagy több kategóriát!</string>
+    <string name="tuzolto02_cat_accident">BALESET</string>
+    <string name="tuzolto02_cat_fire">TŰZESET</string>
+    <string name="tuzolto02_cat_disaster">TERMÉSZETI KATASZTRÓFA</string>
+    <string name="tuzolto02_cat_rescue">MŰSZAKI MENTÉS</string>
+    <string name="tuzolto02_next">KÖVETKEZŐ</string>
+    <string name="tuzolto02_toast_category">Kérjük, válasszon legalább egy kategóriát!</string>
+
+    <!-- GPS / Location -->
+    <string name="location_waiting">📍 Helymeghatározás…</string>
+    <string name="location_permission_needed">📍 Hely-engedély szükséges</string>
+
+    <!-- SMS sending -->
+    <string name="sms_emergency_number">112</string>
+    <string name="sms_app_not_found">Nem található SMS alkalmazás!</string>
 </resources>
