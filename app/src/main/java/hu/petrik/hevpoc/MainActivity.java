@@ -93,16 +93,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showDatePicker() {
-        Calendar cal = Calendar.getInstance();
-        int year = cal.get(Calendar.YEAR);
-        int month = cal.get(Calendar.MONTH);
-        int day = cal.get(Calendar.DAY_OF_MONTH);
+        // Maximum allowed date: 14 years ago from today (minimum age 14, no future dates)
+        Calendar maxDate = Calendar.getInstance();
+        maxDate.add(Calendar.YEAR, -14);
 
-        new DatePickerDialog(this, (view, y, m, d) -> {
+        DatePickerDialog dialog = new DatePickerDialog(this, (view, y, m, d) -> {
             String date = String.format("%04d. %02d. %02d.", y, m + 1, d);
             etDob.setText(date);
             updateSaveButton();
-        }, year, month, day).show();
+        }, maxDate.get(Calendar.YEAR), maxDate.get(Calendar.MONTH), maxDate.get(Calendar.DAY_OF_MONTH));
+        dialog.getDatePicker().setMaxDate(maxDate.getTimeInMillis());
+        dialog.show();
     }
 
     private void setHearing(boolean isYes) {
