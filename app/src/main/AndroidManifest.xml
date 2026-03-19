@@ -46,6 +46,12 @@
         <activity
             android:name=".Tuzolto01Activity"
             android:exported="false" />
+        <activity
+            android:name=".SugoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EvoaidActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
