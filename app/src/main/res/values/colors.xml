@@ -6,6 +6,8 @@
     <color name="surface_card">#FFFFFF</color>
     <color name="text_primary">#111827</color>
     <color name="text_secondary">#6B7280</color>
+    <color name="text_input">#1F2937</color>
+    <color name="hint_text">#374151</color>
     <color name="border_default">#D1D5DB</color>
 
     <color name="red_ambulance">#D32F2F</color>

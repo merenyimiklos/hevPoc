@@ -161,29 +161,59 @@
             app:cornerRadius="18dp"
             app:elevation="0dp" />
 
-        <!-- SZEMTANÚ – witness (toggleable) -->
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnWitness"
+        <!-- SZEMTANÚ – witness toggle card (icon + label + MaterialSwitch) -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="@string/home_witness"
-            android:textSize="26sp"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:textAllCaps="true"
-            android:gravity="start|center_vertical"
-            android:paddingStart="24dp"
-            android:paddingEnd="20dp"
-            app:icon="@drawable/ic_eye"
-            app:iconSize="52dp"
-            app:iconGravity="end"
-            app:iconTint="@color/white"
-            app:iconPadding="0dp"
-            app:backgroundTint="@color/green_action"
-            app:cornerRadius="18dp"
-            app:strokeWidth="0dp"
-            app:elevation="0dp" />
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/bg_witness_card"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <ImageView
+                android:id="@+id/ivWitnessIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_eye"
+                android:contentDescription="@string/home_witness_label"
+                app:tint="@color/gray_witness" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_witness_label"
+                    android:textColor="@color/text_primary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvWitnessStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_witness_on"
+                    android:textColor="@color/green_action"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switchWitness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:contentDescription="@string/home_witness" />
+
+        </LinearLayout>
 
     </LinearLayout>
 

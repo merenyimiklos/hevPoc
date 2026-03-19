@@ -5,7 +5,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.ColorStateList;
 import android.os.Bundle;
-import android.widget.Toast;
+import android.text.Editable;
+import android.text.TextWatcher;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private TextInputEditText etAddress;
     private MaterialButton btnHearingYes;
     private MaterialButton btnHearingNo;
+    private MaterialButton btnSave;
 
     private boolean hearingSelected = false;
     private boolean isHearingImpaired = false;
@@ -48,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         etAddress = findViewById(R.id.etAddress);
         btnHearingYes = findViewById(R.id.btnHearingYes);
         btnHearingNo = findViewById(R.id.btnHearingNo);
-        MaterialButton btnSave = findViewById(R.id.btnSave);
+        btnSave = findViewById(R.id.btnSave);
         TextInputLayout tilDob = findViewById(R.id.tilDob);
 
         // Date of birth: tap the field or the calendar icon to open the picker
@@ -59,8 +61,19 @@ public class MainActivity extends AppCompatActivity {
         btnHearingYes.setOnClickListener(v -> setHearing(true));
         btnHearingNo.setOnClickListener(v -> setHearing(false));
 
+        // Save button state watcher
+        TextWatcher fieldWatcher = new TextWatcher() {
+            @Override public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+            @Override public void onTextChanged(CharSequence s, int start, int before, int count) {}
+            @Override public void afterTextChanged(Editable s) { updateSaveButton(); }
+        };
+        etName.addTextChangedListener(fieldWatcher);
+        etAddress.addTextChangedListener(fieldWatcher);
+
         // Save
         btnSave.setOnClickListener(v -> saveData());
+
+        updateSaveButton();
     }
 
     private void showDatePicker() {
@@ -72,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
         new DatePickerDialog(this, (view, y, m, d) -> {
             String date = String.format("%04d. %02d. %02d.", y, m + 1, d);
             etDob.setText(date);
+            updateSaveButton();
         }, year, month, day).show();
     }
 
@@ -91,6 +105,19 @@ public class MainActivity extends AppCompatActivity {
         btnHearingNo.setBackgroundTintList(
                 ColorStateList.valueOf(isYes ? inactiveColor : activeColor));
         btnHearingNo.setTextColor(isYes ? inactiveTextColor : activeTextColor);
+
+        updateSaveButton();
+    }
+
+    private void updateSaveButton() {
+        String name = etName.getText() != null ? etName.getText().toString().trim() : "";
+        String dob = etDob.getText() != null ? etDob.getText().toString().trim() : "";
+        String address = etAddress.getText() != null ? etAddress.getText().toString().trim() : "";
+        boolean ready = !name.isEmpty() && !dob.isEmpty() && !address.isEmpty() && hearingSelected;
+        int color = ready
+                ? ContextCompat.getColor(this, R.color.green_action)
+                : ContextCompat.getColor(this, R.color.gray_back);
+        btnSave.setBackgroundTintList(ColorStateList.valueOf(color));
     }
 
     private void saveData() {
@@ -99,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
         String address = etAddress.getText() != null ? etAddress.getText().toString().trim() : "";
 
         if (name.isEmpty() || dob.isEmpty() || address.isEmpty() || !hearingSelected) {
-            Toast.makeText(this, R.string.personal_data_toast_required, Toast.LENGTH_LONG).show();
+            ToastHelper.show(this, R.string.personal_data_toast_required);
             return;
         }
 
@@ -111,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
                 .putBoolean("hearing_impaired", isHearingImpaired)
                 .apply();
 
-        Toast.makeText(this, R.string.personal_data_saved, Toast.LENGTH_SHORT).show();
+        ToastHelper.show(this, R.string.personal_data_saved);
         startActivity(new Intent(this, HomeActivity.class));
         finish();
     }

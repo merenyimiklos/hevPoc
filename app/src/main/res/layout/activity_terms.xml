@@ -281,7 +281,7 @@
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:textAllCaps="false"
-                app:backgroundTint="@color/green_action"
+                app:backgroundTint="@color/gray_back"
                 app:cornerRadius="14dp"
                 app:elevation="0dp" />
 
