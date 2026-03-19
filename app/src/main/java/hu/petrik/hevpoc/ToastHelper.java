@@ -2,7 +2,9 @@ package hu.petrik.hevpoc;
 
 import android.app.Activity;
 import android.graphics.drawable.Drawable;
+import android.view.Gravity;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import androidx.core.content.ContextCompat;
@@ -43,6 +45,11 @@ public class ToastHelper {
             tv.setCompoundDrawables(icon, null, null, null);
             tv.setCompoundDrawablePadding(Math.round(12 * density));
         }
+
+        // Center the snackbar on screen
+        FrameLayout.LayoutParams params = (FrameLayout.LayoutParams) snackView.getLayoutParams();
+        params.gravity = Gravity.CENTER;
+        snackView.setLayoutParams(params);
 
         snackbar.show();
     }
