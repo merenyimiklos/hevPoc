@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/yellow_fire">
+    android:background="@drawable/bg_gradient_dark">
 
     <!-- ═══ HEADER ═══ -->
     <LinearLayout

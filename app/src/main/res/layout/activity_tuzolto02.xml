@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/yellow_fire">
+    android:background="@drawable/bg_gradient_dark">
 
     <!-- ═══ HEADER ═══ -->
     <LinearLayout
@@ -80,6 +80,10 @@
                 android:textStyle="bold"
                 android:textColor="@color/text_primary"
                 android:textAllCaps="true"
+                app:icon="@drawable/ic_directions_car"
+                app:iconGravity="textStart"
+                app:iconSize="24dp"
+                app:iconTint="@color/text_primary"
                 app:strokeColor="@color/yellow_fire"
                 app:strokeWidth="2dp"
                 app:cornerRadius="@dimen/corner_button"
@@ -97,6 +101,10 @@
                 android:textStyle="bold"
                 android:textColor="@color/text_primary"
                 android:textAllCaps="true"
+                app:icon="@drawable/ic_fire"
+                app:iconGravity="textStart"
+                app:iconSize="24dp"
+                app:iconTint="@color/text_primary"
                 app:strokeColor="@color/yellow_fire"
                 app:strokeWidth="2dp"
                 app:cornerRadius="@dimen/corner_button"
@@ -124,6 +132,10 @@
                 android:textStyle="bold"
                 android:textColor="@color/text_primary"
                 android:textAllCaps="true"
+                app:icon="@drawable/ic_tornado"
+                app:iconGravity="textStart"
+                app:iconSize="24dp"
+                app:iconTint="@color/text_primary"
                 app:strokeColor="@color/yellow_fire"
                 app:strokeWidth="2dp"
                 app:cornerRadius="@dimen/corner_button"
@@ -141,6 +153,10 @@
                 android:textStyle="bold"
                 android:textColor="@color/text_primary"
                 android:textAllCaps="true"
+                app:icon="@drawable/ic_construction"
+                app:iconGravity="textStart"
+                app:iconSize="24dp"
+                app:iconTint="@color/text_primary"
                 app:strokeColor="@color/yellow_fire"
                 app:strokeWidth="2dp"
                 app:cornerRadius="@dimen/corner_button"
