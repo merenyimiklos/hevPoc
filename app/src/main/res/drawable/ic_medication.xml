@@ -4,7 +4,20 @@
     android:height="24dp"
     android:viewportWidth="24"
     android:viewportHeight="24">
+    <!-- Sick face icon for illness/sickness -->
     <path
         android:fillColor="#FFFFFF"
-        android:pathData="M4.22,11.29l4.09,-4.09C8.5,7.02 8.74,6.93 9,6.93s0.5,0.09 0.71,0.27l4.09,4.09c0.39,0.39 0.39,1.03 0,1.42l-4.09,4.09C9.5,16.98 9.26,17.07 9,17.07s-0.5,-0.09 -0.71,-0.27L4.22,12.71C3.83,12.32 3.83,11.68 4.22,11.29zM14,6h2v2.07l-1,1 -1,-1V6zM14,15.93l1,-1 1,1V18h-2V15.93zM20,10v4h-2.07l-1,-1 1,-1H20zM9.07,4H13v2h-2.07l-1,-1L9.07,4z" />
+        android:pathData="M12,2C6.48,2 2,6.48 2,12s4.48,10 10,10 10,-4.48 10,-10S17.52,2 12,2zM12,20c-4.41,0 -8,-3.59 -8,-8s3.59,-8 8,-8 8,3.59 8,8 -3.59,8 -8,8z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M8.5,14.5m-1.5,0a1.5,1.5 0,1 1,3 0a1.5,1.5 0,1 1,-3 0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M15.5,14.5m-1.5,0a1.5,1.5 0,1 1,3 0a1.5,1.5 0,1 1,-3 0" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M10,8.5l-1,1 -1,-1 -1,1 1.5,1.5L10,9.5l1.5,1.5L13,9.5l-1,-1 -1,1z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M16,8.5l-1,1 -1,-1 -1,1 1.5,1.5L16,9.5l1.5,1.5L19,9.5l-1,-1 -1,1z" />
 </vector>
