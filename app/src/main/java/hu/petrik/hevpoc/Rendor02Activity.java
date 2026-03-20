@@ -161,6 +161,7 @@ public class Rendor02Activity extends AppCompatActivity {
                 : ContextCompat.getColor(this, R.color.text_primary);
         btn.setBackgroundTintList(ColorStateList.valueOf(bgColor));
         btn.setTextColor(textColor);
+        btn.setIconTint(ColorStateList.valueOf(textColor));
     }
 
     private void updateNextButton() {

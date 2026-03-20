@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Door/burglary icon -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M19,19V4h-4V3H5v16H3v2h18v-2h-2zM7,5h6v14H7V5zM15,19V6h2v13h-2zM10,11v2H8v-2h2z" />
+</vector>

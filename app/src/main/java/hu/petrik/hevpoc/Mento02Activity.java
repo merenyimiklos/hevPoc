@@ -138,6 +138,7 @@ public class Mento02Activity extends AppCompatActivity {
 
         btn.setBackgroundTintList(ColorStateList.valueOf(bgColor));
         btn.setTextColor(textColor);
+        btn.setIconTint(ColorStateList.valueOf(textColor));
     }
 
     private void updateNextButton() {
